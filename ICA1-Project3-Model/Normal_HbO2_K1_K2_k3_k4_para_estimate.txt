@@ -1,0 +1,76 @@
+Objective Function Value:	3.55602e-05
+Standard Deviation:	nan
+Function Evaluations:	4008
+CPU Time [s]:	1.643
+Evaluations/Second [1/s]:	2439.44
+
+	Parameter	Value	Gradient	Standard Deviation
+	(R1).k1:	0.0144007	0.0138635	nan
+	(R2).k1:	0.0190635	0.0171575	nan
+	(R3).k1:	0.0228719	0.0149927	nan
+	(R4).k1:	0.116568	0.00195809	nan
+
+File Name:	/Users/shenyu/Undergraduate/CMML3/Practice_per_week/Copasi/Commonly_accepted_PO2_and_SO2_data_points_at_normal_physiologic_conditions.csv
+Experiment:	Commonly accepted PO2 and SO2 data points at normal physiologic conditions
+Mean:	-0.000907533
+Objective Value:	3.55602e-05
+Root Mean Square:	0.00298162
+Row	Values[Saturation_O2_abcd](Data)	Values[Saturation_O2_abcd](Fit)	Values[Saturation_O2_abcd](Weighted Error)	Objective Value	Root Mean Square
+
+1.	0.5	0.499067	-0.00093313	8.70731e-07	0.00093313
+2.	0.75	0.753196	0.00319615	1.02154e-05	0.00319615
+3.	0.9	0.898939	-0.00106118	1.12609e-06	0.00106118
+4.	0.97	0.965168	-0.00483198	2.3348e-05	0.00483198
+Objective Value			3.55602e-05
+Root Mean Square			0.00298162
+Weight			1
+
+Fisher Information Matrix:
+  Matrix(4x4)
+	309.142	308.916	272.074	50.0086
+	308.916	311.659	277.216	51.4337
+	272.074	277.216	249.177	46.7127
+	50.0086	51.4337	46.7127	8.85286
+
+FIM Eigenvalues:
+  Matrix(4x1)
+	0.000285667
+	0.0374475
+	5.81199
+	872.981
+
+FIM Eigenvectors corresponding to Eigenvalues:
+  Matrix(4x4)
+	0.174385	-0.456902	0.457168	-0.742851
+	-0.391067	0.658523	-0.190529	-0.614095
+	-0.682378	0.0245948	0.687321	0.247677
+	0.592466	0.59748	0.531305	0.0985708
+
+Fisher Information Matrix (scaled):
+  Matrix(4x4)
+	0.0641096	0.0848057	0.0896133	0.083947
+	0.0848057	0.113262	0.120871	0.114295
+	0.0896133	0.120871	0.130351	0.124542
+	0.083947	0.114295	0.124542	0.120293
+
+FIM Eigenvalues (scaled):
+  Matrix(4x1)
+	2.43705e-07
+	6.22064e-05
+	0.00452971
+	0.423423
+
+FIM Eigenvectors (scaled) corresponding to Eigenvalues:
+  Matrix(4x4)
+	0.358747	-0.705285	0.583124	-0.183955
+	-0.570225	0.314345	0.57458	-0.495871
+	0.631706	0.371157	-0.1492	-0.664025
+	0.383525	0.515754	0.554584	0.528529
+
+Correlation Matrix:
+  Matrix(4x4)
+	1	-0.997321	0.986999	-0.964671
+	-0.997321	1	-0.995996	0.980597
+	0.986999	-0.995996	1	-0.994041
+	-0.964671	0.980597	-0.994041	1
+
