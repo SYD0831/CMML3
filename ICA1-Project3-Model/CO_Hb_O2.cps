@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- generated with COPASI 4.44 (Build 295) (http://www.copasi.org) at 2025-04-08T08:25:20Z -->
+<!-- generated with COPASI 4.44 (Build 295) (http://www.copasi.org) at 2025-04-09T04:04:09Z -->
 <?oxygen RNGSchema="http://www.copasi.org/static/schema/CopasiML.rng" type="xml"?>
 <COPASI xmlns="http://www.copasi.org/static/schema" versionMajor="4" versionMinor="44" versionDevel="295" copasiSourcesModified="0">
   <ListOfFunctions>
@@ -54,12 +54,12 @@ Reaction scheme where the products are created from the reactants and the change
       </ListOfParameterDescriptions>
     </Function>
   </ListOfFunctions>
-  <Model key="Model_1" name="Oxygen Binding to Hemoglobin" simulationType="time" timeUnit="s" volumeUnit="l" areaUnit="m²" lengthUnit="m" quantityUnit="µmol" type="deterministic" avogadroConstant="6.0221407599999999e+23">
+  <Model key="Model_0" name="Oxygen Binding to Hemoglobin" simulationType="time" timeUnit="s" volumeUnit="l" areaUnit="m²" lengthUnit="m" quantityUnit="µmol" type="deterministic" avogadroConstant="6.0221407599999999e+23">
     <MiriamAnnotation>
 <rdf:RDF
    xmlns:dcterms="http://purl.org/dc/terms/"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#Model_1">
+  <rdf:Description rdf:about="#Model_0">
     <dcterms:created>
       <rdf:Description>
         <dcterms:W3CDTF>2025-03-04T01:29:07Z</dcterms:W3CDTF>
@@ -70,15 +70,7 @@ Reaction scheme where the products are created from the reactants and the change
 
     </MiriamAnnotation>
     <ListOfCompartments>
-      <Compartment key="Compartment_0" name="Normal_lung" simulationType="fixed" dimensionality="3" addNoise="false">
-        <MiriamAnnotation>
-<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<rdf:Description rdf:about="#Compartment_0">
-</rdf:Description>
-</rdf:RDF>
-        </MiriamAnnotation>
-      </Compartment>
-      <Compartment key="Compartment_1" name="CO_lung" simulationType="fixed" dimensionality="3" addNoise="false">
+      <Compartment key="Compartment_1" name="Normal_lung" simulationType="fixed" dimensionality="3" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 <rdf:Description rdf:about="#Compartment_1">
@@ -86,76 +78,17 @@ Reaction scheme where the products are created from the reactants and the change
 </rdf:RDF>
         </MiriamAnnotation>
       </Compartment>
+      <Compartment key="Compartment_2" name="CO_lung" simulationType="fixed" dimensionality="3" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:Description rdf:about="#Compartment_2">
+</rdf:Description>
+</rdf:RDF>
+        </MiriamAnnotation>
+      </Compartment>
     </ListOfCompartments>
     <ListOfMetabolites>
-      <Metabolite key="Metabolite_0" name="Hb" simulationType="reactions" compartment="Compartment_0" addNoise="false">
-        <MiriamAnnotation>
-<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<rdf:Description rdf:about="#Metabolite_0">
-</rdf:Description>
-</rdf:RDF>
-        </MiriamAnnotation>
-      </Metabolite>
-      <Metabolite key="Metabolite_1" name="HbO2" simulationType="reactions" compartment="Compartment_0" addNoise="false">
-        <MiriamAnnotation>
-<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<rdf:Description rdf:about="#Metabolite_1">
-</rdf:Description>
-</rdf:RDF>
-        </MiriamAnnotation>
-      </Metabolite>
-      <Metabolite key="Metabolite_2" name="HbO22" simulationType="reactions" compartment="Compartment_0" addNoise="false">
-        <MiriamAnnotation>
-<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<rdf:Description rdf:about="#Metabolite_2">
-</rdf:Description>
-</rdf:RDF>
-        </MiriamAnnotation>
-      </Metabolite>
-      <Metabolite key="Metabolite_3" name="HbO23" simulationType="reactions" compartment="Compartment_0" addNoise="false">
-        <MiriamAnnotation>
-<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<rdf:Description rdf:about="#Metabolite_3">
-</rdf:Description>
-</rdf:RDF>
-        </MiriamAnnotation>
-      </Metabolite>
-      <Metabolite key="Metabolite_4" name="HbO24" simulationType="reactions" compartment="Compartment_0" addNoise="false">
-        <MiriamAnnotation>
-<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<rdf:Description rdf:about="#Metabolite_4">
-</rdf:Description>
-</rdf:RDF>
-        </MiriamAnnotation>
-      </Metabolite>
-      <Metabolite key="Metabolite_5" name="O2" simulationType="assignment" compartment="Compartment_0" addNoise="false">
-        <MiriamAnnotation>
-<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<rdf:Description rdf:about="#Metabolite_5">
-</rdf:Description>
-</rdf:RDF>
-        </MiriamAnnotation>
-        <Expression>
-          &lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[alpha_O2],Reference=InitialValue>*&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[PO2],Reference=InitialValue>
-        </Expression>
-      </Metabolite>
-      <Metabolite key="Metabolite_6" name="Hb" simulationType="reactions" compartment="Compartment_1" addNoise="false">
-        <MiriamAnnotation>
-<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<rdf:Description rdf:about="#Metabolite_6">
-</rdf:Description>
-</rdf:RDF>
-        </MiriamAnnotation>
-      </Metabolite>
-      <Metabolite key="Metabolite_7" name="HbO2" simulationType="reactions" compartment="Compartment_1" addNoise="false">
-        <MiriamAnnotation>
-<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<rdf:Description rdf:about="#Metabolite_7">
-</rdf:Description>
-</rdf:RDF>
-        </MiriamAnnotation>
-      </Metabolite>
-      <Metabolite key="Metabolite_8" name="HbO22" simulationType="reactions" compartment="Compartment_1" addNoise="false">
+      <Metabolite key="Metabolite_8" name="Hb" simulationType="reactions" compartment="Compartment_1" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 <rdf:Description rdf:about="#Metabolite_8">
@@ -163,7 +96,7 @@ Reaction scheme where the products are created from the reactants and the change
 </rdf:RDF>
         </MiriamAnnotation>
       </Metabolite>
-      <Metabolite key="Metabolite_9" name="HbO23" simulationType="reactions" compartment="Compartment_1" addNoise="false">
+      <Metabolite key="Metabolite_9" name="HbO2" simulationType="reactions" compartment="Compartment_1" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 <rdf:Description rdf:about="#Metabolite_9">
@@ -171,7 +104,7 @@ Reaction scheme where the products are created from the reactants and the change
 </rdf:RDF>
         </MiriamAnnotation>
       </Metabolite>
-      <Metabolite key="Metabolite_10" name="HbO24" simulationType="reactions" compartment="Compartment_1" addNoise="false">
+      <Metabolite key="Metabolite_10" name="HbO22" simulationType="reactions" compartment="Compartment_1" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 <rdf:Description rdf:about="#Metabolite_10">
@@ -179,10 +112,26 @@ Reaction scheme where the products are created from the reactants and the change
 </rdf:RDF>
         </MiriamAnnotation>
       </Metabolite>
-      <Metabolite key="Metabolite_11" name="O2" simulationType="assignment" compartment="Compartment_1" addNoise="false">
+      <Metabolite key="Metabolite_11" name="HbO23" simulationType="reactions" compartment="Compartment_1" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 <rdf:Description rdf:about="#Metabolite_11">
+</rdf:Description>
+</rdf:RDF>
+        </MiriamAnnotation>
+      </Metabolite>
+      <Metabolite key="Metabolite_12" name="HbO24" simulationType="reactions" compartment="Compartment_1" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:Description rdf:about="#Metabolite_12">
+</rdf:Description>
+</rdf:RDF>
+        </MiriamAnnotation>
+      </Metabolite>
+      <Metabolite key="Metabolite_13" name="O2" simulationType="assignment" compartment="Compartment_1" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:Description rdf:about="#Metabolite_13">
 </rdf:Description>
 </rdf:RDF>
         </MiriamAnnotation>
@@ -190,50 +139,113 @@ Reaction scheme where the products are created from the reactants and the change
           &lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[alpha_O2],Reference=InitialValue>*&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[PO2],Reference=InitialValue>
         </Expression>
       </Metabolite>
-      <Metabolite key="Metabolite_12" name="CO" simulationType="assignment" compartment="Compartment_1" addNoise="false">
+      <Metabolite key="Metabolite_14" name="Hb" simulationType="reactions" compartment="Compartment_2" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<rdf:Description rdf:about="#Metabolite_12">
+<rdf:RDF
+xmlns:dcterms="http://purl.org/dc/terms/"
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:Description rdf:about="#Metabolite_14">
 </rdf:Description>
 </rdf:RDF>
         </MiriamAnnotation>
+      </Metabolite>
+      <Metabolite key="Metabolite_15" name="HbO2" simulationType="reactions" compartment="Compartment_2" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:Description rdf:about="#Metabolite_15">
+</rdf:Description>
+</rdf:RDF>
+        </MiriamAnnotation>
+      </Metabolite>
+      <Metabolite key="Metabolite_16" name="HbO22" simulationType="reactions" compartment="Compartment_2" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF
+xmlns:dcterms="http://purl.org/dc/terms/"
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:Description rdf:about="#Metabolite_16">
+</rdf:Description>
+</rdf:RDF>
+        </MiriamAnnotation>
+      </Metabolite>
+      <Metabolite key="Metabolite_17" name="HbO23" simulationType="reactions" compartment="Compartment_2" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:Description rdf:about="#Metabolite_17">
+</rdf:Description>
+</rdf:RDF>
+        </MiriamAnnotation>
+      </Metabolite>
+      <Metabolite key="Metabolite_18" name="HbO24" simulationType="reactions" compartment="Compartment_2" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:Description rdf:about="#Metabolite_18">
+</rdf:Description>
+</rdf:RDF>
+        </MiriamAnnotation>
+      </Metabolite>
+      <Metabolite key="Metabolite_19" name="O2" simulationType="assignment" compartment="Compartment_2" addNoise="false">
+        <Expression>
+          &lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[alpha_O2],Reference=InitialValue>*&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[PO2],Reference=InitialValue>
+        </Expression>
+      </Metabolite>
+      <Metabolite key="Metabolite_20" name="CO" simulationType="assignment" compartment="Compartment_2" addNoise="false">
         <Expression>
           &lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[PCO],Reference=InitialValue>*&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[alpha_CO],Reference=InitialValue>
         </Expression>
       </Metabolite>
-      <Metabolite key="Metabolite_13" name="HbCO" simulationType="reactions" compartment="Compartment_1" addNoise="false">
+      <Metabolite key="Metabolite_21" name="HbCO" simulationType="reactions" compartment="Compartment_2" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<rdf:Description rdf:about="#Metabolite_13">
+<rdf:RDF
+xmlns:dcterms="http://purl.org/dc/terms/"
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:Description rdf:about="#Metabolite_21">
 </rdf:Description>
 </rdf:RDF>
         </MiriamAnnotation>
       </Metabolite>
-      <Metabolite key="Metabolite_14" name="HbCOO2" simulationType="reactions" compartment="Compartment_1" addNoise="false">
+      <Metabolite key="Metabolite_22" name="HbCOO2" simulationType="reactions" compartment="Compartment_2" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<rdf:Description rdf:about="#Metabolite_14">
+<rdf:Description rdf:about="#Metabolite_22">
+</rdf:Description>
+</rdf:RDF>
+        </MiriamAnnotation>
+      </Metabolite>
+      <Metabolite key="Metabolite_23" name="HbCOO22" simulationType="reactions" compartment="Compartment_2" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:Description rdf:about="#Metabolite_23">
+</rdf:Description>
+</rdf:RDF>
+        </MiriamAnnotation>
+      </Metabolite>
+      <Metabolite key="Metabolite_24" name="HbCOO23" simulationType="reactions" compartment="Compartment_2" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:Description rdf:about="#Metabolite_24">
 </rdf:Description>
 </rdf:RDF>
         </MiriamAnnotation>
       </Metabolite>
     </ListOfMetabolites>
     <ListOfModelValues>
-      <ModelValue key="ModelValue_0" name="Relative_Saturation_calculate" simulationType="assignment" addNoise="false">
+      <ModelValue key="ModelValue_19" name="Relative_Saturation_calculate" simulationType="assignment" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF
+xmlns:dcterms="http://purl.org/dc/terms/"
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:Description rdf:about="#ModelValue_19">
+</rdf:Description>
+</rdf:RDF>
+        </MiriamAnnotation>
         <Expression>
-          (&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[Normal_lung],Vector=Metabolites[HbO2],Reference=Concentration>+2*&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[Normal_lung],Vector=Metabolites[HbO22],Reference=Concentration>+3*&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[Normal_lung],Vector=Metabolites[HbO23],Reference=Concentration>+4*&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[Normal_lung],Vector=Metabolites[HbO24],Reference=Concentration>+&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung],Vector=Metabolites[HbCOO2],Reference=Concentration>)/(4*(&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[Normal_lung],Vector=Metabolites[Hb],Reference=Concentration>+&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[Normal_lung],Vector=Metabolites[HbO2],Reference=Concentration>+&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[Normal_lung],Vector=Metabolites[HbO22],Reference=Concentration>+&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[Normal_lung],Vector=Metabolites[HbO23],Reference=Concentration>+&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[Normal_lung],Vector=Metabolites[HbO24],Reference=Concentration>+&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung],Vector=Metabolites[HbCOO2],Reference=Concentration>))
+          (&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[Normal_lung],Vector=Metabolites[HbO2],Reference=Concentration>+2*&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[Normal_lung],Vector=Metabolites[HbO22],Reference=Concentration>+3*&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[Normal_lung],Vector=Metabolites[HbO23],Reference=Concentration>+4*&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[Normal_lung],Vector=Metabolites[HbO24],Reference=Concentration>)/(4*(&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[Normal_lung],Vector=Metabolites[Hb],Reference=Concentration>+&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[Normal_lung],Vector=Metabolites[HbO2],Reference=Concentration>+&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[Normal_lung],Vector=Metabolites[HbO22],Reference=Concentration>+&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[Normal_lung],Vector=Metabolites[HbO23],Reference=Concentration>+&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[Normal_lung],Vector=Metabolites[HbO24],Reference=Concentration>))
         </Expression>
         <Unit>
           1
         </Unit>
       </ModelValue>
-      <ModelValue key="ModelValue_1" name="Relative_Saturation_hill_KA" simulationType="assignment" addNoise="false">
-        <MiriamAnnotation>
-<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<rdf:Description rdf:about="#ModelValue_1">
-</rdf:Description>
-</rdf:RDF>
-        </MiriamAnnotation>
+      <ModelValue key="ModelValue_20" name="Relative_Saturation_hill_KA" simulationType="assignment" addNoise="false">
         <Expression>
           (&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[Normal_lung],Vector=Metabolites[O2],Reference=InitialConcentration>/&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[KA_hemoglobin_oxygen],Reference=InitialValue>)^&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[Hill_nH],Reference=InitialValue>/(1+(&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[Normal_lung],Vector=Metabolites[O2],Reference=InitialConcentration>/&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[KA_hemoglobin_oxygen],Reference=InitialValue>)^&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[Hill_nH],Reference=InitialValue>)
         </Expression>
@@ -241,46 +253,54 @@ Reaction scheme where the products are created from the reactants and the change
           1
         </Unit>
       </ModelValue>
-      <ModelValue key="ModelValue_2" name="Hill_nH" simulationType="fixed" addNoise="false">
+      <ModelValue key="ModelValue_21" name="Hill_nH" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<rdf:Description rdf:about="#ModelValue_2">
+<rdf:Description rdf:about="#ModelValue_21">
 </rdf:Description>
 </rdf:RDF>
         </MiriamAnnotation>
       </ModelValue>
-      <ModelValue key="ModelValue_3" name="KA_hemoglobin_oxygen" simulationType="fixed" addNoise="false">
+      <ModelValue key="ModelValue_22" name="KA_hemoglobin_oxygen" simulationType="fixed" addNoise="false">
         <Unit>
           umol
         </Unit>
       </ModelValue>
-      <ModelValue key="ModelValue_4" name="Kd_hemoglobin_oxygen" simulationType="assignment" addNoise="false">
+      <ModelValue key="ModelValue_23" name="Kd_hemoglobin_oxygen" simulationType="assignment" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:Description rdf:about="#ModelValue_23">
+</rdf:Description>
+</rdf:RDF>
+        </MiriamAnnotation>
         <Expression>
           &lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[KA_hemoglobin_oxygen],Reference=InitialValue>^&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[Hill_nH],Reference=InitialValue>
         </Expression>
       </ModelValue>
-      <ModelValue key="ModelValue_5" name="Relative_Saturation_hill_Kd" simulationType="assignment" addNoise="false">
+      <ModelValue key="ModelValue_24" name="Relative_Saturation_hill_Kd" simulationType="assignment" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF
+xmlns:dcterms="http://purl.org/dc/terms/"
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:Description rdf:about="#ModelValue_24">
+</rdf:Description>
+</rdf:RDF>
+        </MiriamAnnotation>
         <Expression>
           &lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[Normal_lung],Vector=Metabolites[O2],Reference=InitialConcentration>^&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[Hill_nH],Reference=InitialValue>/(&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[Kd_hemoglobin_oxygen],Reference=InitialValue>+&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[Normal_lung],Vector=Metabolites[O2],Reference=InitialConcentration>^&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[Hill_nH],Reference=InitialValue>)
         </Expression>
       </ModelValue>
-      <ModelValue key="ModelValue_6" name="alpha_O2" simulationType="fixed" addNoise="false">
+      <ModelValue key="ModelValue_25" name="alpha_O2" simulationType="fixed" addNoise="false">
         <Unit>
           µmol/(l * mmHg)
         </Unit>
       </ModelValue>
-      <ModelValue key="ModelValue_7" name="PO2" simulationType="fixed" addNoise="false">
+      <ModelValue key="ModelValue_26" name="PO2" simulationType="fixed" addNoise="false">
         <Unit>
           mmHg
         </Unit>
       </ModelValue>
-      <ModelValue key="ModelValue_8" name="a" simulationType="assignment" addNoise="false">
-        <MiriamAnnotation>
-<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<rdf:Description rdf:about="#ModelValue_8">
-</rdf:Description>
-</rdf:RDF>
-        </MiriamAnnotation>
+      <ModelValue key="ModelValue_27" name="a" simulationType="assignment" addNoise="false">
         <Expression>
           &lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Reactions[R1],ParameterGroup=Parameters,Parameter=k1,Reference=Value>
         </Expression>
@@ -288,10 +308,12 @@ Reaction scheme where the products are created from the reactants and the change
           1/(umol/l)
         </Unit>
       </ModelValue>
-      <ModelValue key="ModelValue_9" name="b" simulationType="assignment" addNoise="false">
+      <ModelValue key="ModelValue_28" name="b" simulationType="assignment" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<rdf:Description rdf:about="#ModelValue_9">
+<rdf:RDF
+xmlns:dcterms="http://purl.org/dc/terms/"
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:Description rdf:about="#ModelValue_28">
 </rdf:Description>
 </rdf:RDF>
         </MiriamAnnotation>
@@ -302,10 +324,10 @@ Reaction scheme where the products are created from the reactants and the change
           1/(umol/l)^2
         </Unit>
       </ModelValue>
-      <ModelValue key="ModelValue_10" name="c" simulationType="assignment" addNoise="false">
+      <ModelValue key="ModelValue_29" name="c" simulationType="assignment" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<rdf:Description rdf:about="#ModelValue_10">
+<rdf:Description rdf:about="#ModelValue_29">
 </rdf:Description>
 </rdf:RDF>
         </MiriamAnnotation>
@@ -316,10 +338,10 @@ Reaction scheme where the products are created from the reactants and the change
           1/(umol/l)^3
         </Unit>
       </ModelValue>
-      <ModelValue key="ModelValue_11" name="d" simulationType="assignment" addNoise="false">
+      <ModelValue key="ModelValue_30" name="d" simulationType="assignment" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<rdf:Description rdf:about="#ModelValue_11">
+<rdf:Description rdf:about="#ModelValue_30">
 </rdf:Description>
 </rdf:RDF>
         </MiriamAnnotation>
@@ -330,20 +352,38 @@ Reaction scheme where the products are created from the reactants and the change
           1/(umol/l)^4
         </Unit>
       </ModelValue>
-      <ModelValue key="ModelValue_12" name="Saturation_O2_normal" simulationType="assignment" addNoise="false">
+      <ModelValue key="ModelValue_31" name="Saturation_O2_normal" simulationType="assignment" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF
+xmlns:dcterms="http://purl.org/dc/terms/"
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:Description rdf:about="#ModelValue_31">
+</rdf:Description>
+</rdf:RDF>
+        </MiriamAnnotation>
         <Expression>
           (&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[a],Reference=InitialValue>*&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[Normal_lung],Vector=Metabolites[O2],Reference=InitialConcentration>+2*&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[b],Reference=InitialValue>*&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[Normal_lung],Vector=Metabolites[O2],Reference=InitialConcentration>^2+3*&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[c],Reference=InitialValue>*&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[Normal_lung],Vector=Metabolites[O2],Reference=InitialConcentration>^3+4*&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[d],Reference=InitialValue>*&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[Normal_lung],Vector=Metabolites[O2],Reference=InitialConcentration>^4)/(4*(1+&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[a],Reference=InitialValue>*&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[Normal_lung],Vector=Metabolites[O2],Reference=InitialConcentration>+&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[b],Reference=InitialValue>*&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[Normal_lung],Vector=Metabolites[O2],Reference=InitialConcentration>^2+&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[c],Reference=InitialValue>*&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[Normal_lung],Vector=Metabolites[O2],Reference=InitialConcentration>^3+&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[d],Reference=InitialValue>*&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[Normal_lung],Vector=Metabolites[O2],Reference=InitialConcentration>^4))
         </Expression>
       </ModelValue>
-      <ModelValue key="ModelValue_13" name="COHb_percent" simulationType="assignment" addNoise="false">
+      <ModelValue key="ModelValue_32" name="COHb_percent" simulationType="assignment" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF
+xmlns:dcterms="http://purl.org/dc/terms/"
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:Description rdf:about="#ModelValue_32">
+</rdf:Description>
+</rdf:RDF>
+        </MiriamAnnotation>
         <Expression>
-          (&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung],Vector=Metabolites[HbCO],Reference=Concentration>+&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung],Vector=Metabolites[HbCOO2],Reference=Concentration>)/(&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung],Vector=Metabolites[Hb],Reference=Concentration>+&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung],Vector=Metabolites[HbCO],Reference=Concentration>+&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung],Vector=Metabolites[HbCOO2],Reference=Concentration>+&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung],Vector=Metabolites[HbO2],Reference=Concentration>+&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung],Vector=Metabolites[HbO22],Reference=Concentration>+&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung],Vector=Metabolites[HbO23],Reference=Concentration>+&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung],Vector=Metabolites[HbO24],Reference=Concentration>)
+          (&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung],Vector=Metabolites[HbCO],Reference=Concentration>+&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung],Vector=Metabolites[HbCOO2],Reference=Concentration>+&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung],Vector=Metabolites[HbCOO22],Reference=Concentration>+&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung],Vector=Metabolites[HbCOO23],Reference=Concentration>)/(&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung],Vector=Metabolites[Hb],Reference=Concentration>+&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung],Vector=Metabolites[HbCO],Reference=Concentration>+&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung],Vector=Metabolites[HbCOO2],Reference=Concentration>+&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung],Vector=Metabolites[HbCOO22],Reference=Concentration>+&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung],Vector=Metabolites[HbCOO23],Reference=Concentration>+&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung],Vector=Metabolites[HbO2],Reference=Concentration>+&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung],Vector=Metabolites[HbO22],Reference=Concentration>+&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung],Vector=Metabolites[HbO23],Reference=Concentration>+&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung],Vector=Metabolites[HbO24],Reference=Concentration>)
         </Expression>
       </ModelValue>
-      <ModelValue key="ModelValue_14" name="alpha_CO" simulationType="fixed" addNoise="false">
+      <ModelValue key="ModelValue_33" name="alpha_CO" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<rdf:Description rdf:about="#ModelValue_14">
+<rdf:RDF
+xmlns:dcterms="http://purl.org/dc/terms/"
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:Description rdf:about="#ModelValue_33">
 </rdf:Description>
 </rdf:RDF>
         </MiriamAnnotation>
@@ -351,20 +391,22 @@ Reaction scheme where the products are created from the reactants and the change
           µmol/(l * mmHg)
         </Unit>
       </ModelValue>
-      <ModelValue key="ModelValue_15" name="PCO" simulationType="fixed" addNoise="false">
+      <ModelValue key="ModelValue_34" name="PCO" simulationType="fixed" addNoise="false">
         <Unit>
           mmHg
         </Unit>
       </ModelValue>
-      <ModelValue key="ModelValue_16" name="Saturation_O2_copart" simulationType="assignment" addNoise="false">
+      <ModelValue key="ModelValue_35" name="Saturation_O2_copart" simulationType="assignment" addNoise="false">
         <Expression>
-          (&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[a],Reference=InitialValue>*&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung],Vector=Metabolites[O2],Reference=InitialConcentration>+2*&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[b],Reference=InitialValue>*&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung],Vector=Metabolites[O2],Reference=InitialConcentration>^2+3*&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[c],Reference=InitialValue>*&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung],Vector=Metabolites[O2],Reference=InitialConcentration>^3+4*&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[d],Reference=InitialValue>*&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung],Vector=Metabolites[O2],Reference=InitialConcentration>^4+&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[f],Reference=InitialValue>*&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung],Vector=Metabolites[O2],Reference=InitialConcentration>*&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung],Vector=Metabolites[CO],Reference=InitialConcentration>)/(4*(1+&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[a],Reference=InitialValue>*&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung],Vector=Metabolites[O2],Reference=InitialConcentration>+&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[b],Reference=InitialValue>*&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung],Vector=Metabolites[O2],Reference=InitialConcentration>^2+&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[c],Reference=InitialValue>*&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung],Vector=Metabolites[O2],Reference=InitialConcentration>^3+&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[d],Reference=InitialValue>*&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung],Vector=Metabolites[O2],Reference=InitialConcentration>^4+&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[e],Reference=InitialValue>*&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung],Vector=Metabolites[CO],Reference=InitialConcentration>+&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[f],Reference=InitialValue>*&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung],Vector=Metabolites[O2],Reference=InitialConcentration>*&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung],Vector=Metabolites[CO],Reference=InitialConcentration>))
+          (&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[a],Reference=InitialValue>*&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung],Vector=Metabolites[O2],Reference=InitialConcentration>+2*&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[b],Reference=InitialValue>*&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung],Vector=Metabolites[O2],Reference=InitialConcentration>^2+3*&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[c],Reference=InitialValue>*&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung],Vector=Metabolites[O2],Reference=InitialConcentration>^3+4*&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[d],Reference=InitialValue>*&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung],Vector=Metabolites[O2],Reference=InitialConcentration>^4+&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Reactions[R1_co],ParameterGroup=Parameters,Parameter=k1,Reference=Value>*&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Reactions[R6_co],ParameterGroup=Parameters,Parameter=k1,Reference=Value>*&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung],Vector=Metabolites[O2],Reference=InitialConcentration>*&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung],Vector=Metabolites[CO],Reference=InitialConcentration>+2*&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Reactions[R1_co],ParameterGroup=Parameters,Parameter=k1,Reference=Value>*&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Reactions[R2_co],ParameterGroup=Parameters,Parameter=k1,Reference=Value>*&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Reactions[R7_co],ParameterGroup=Parameters,Parameter=k1,Reference=Value>*&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung],Vector=Metabolites[O2],Reference=InitialConcentration>^2*&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung],Vector=Metabolites[CO],Reference=InitialConcentration>+3*&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Reactions[R1_co],ParameterGroup=Parameters,Parameter=k1,Reference=Value>*&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Reactions[R2_co],ParameterGroup=Parameters,Parameter=k1,Reference=Value>*&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Reactions[R3_co],ParameterGroup=Parameters,Parameter=k1,Reference=Value>*&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Reactions[R8_co],ParameterGroup=Parameters,Parameter=k1,Reference=Value>*&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung],Vector=Metabolites[O2],Reference=InitialConcentration>^3*&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung],Vector=Metabolites[CO],Reference=InitialConcentration>)/(4*(1+&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[a],Reference=InitialValue>*&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung],Vector=Metabolites[O2],Reference=InitialConcentration>+&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[b],Reference=InitialValue>*&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung],Vector=Metabolites[O2],Reference=InitialConcentration>^2+&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[c],Reference=InitialValue>*&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung],Vector=Metabolites[O2],Reference=InitialConcentration>^3+&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[d],Reference=InitialValue>*&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung],Vector=Metabolites[O2],Reference=InitialConcentration>^4+&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[e],Reference=InitialValue>*&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung],Vector=Metabolites[CO],Reference=InitialConcentration>+&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Reactions[R1_co],ParameterGroup=Parameters,Parameter=k1,Reference=Value>*&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Reactions[R6_co],ParameterGroup=Parameters,Parameter=k1,Reference=Value>*&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung],Vector=Metabolites[O2],Reference=InitialConcentration>*&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung],Vector=Metabolites[CO],Reference=InitialConcentration>+&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Reactions[R1_co],ParameterGroup=Parameters,Parameter=k1,Reference=Value>*&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Reactions[R2_co],ParameterGroup=Parameters,Parameter=k1,Reference=Value>*&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Reactions[R7_co],ParameterGroup=Parameters,Parameter=k1,Reference=Value>*&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung],Vector=Metabolites[O2],Reference=InitialConcentration>^2*&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung],Vector=Metabolites[CO],Reference=InitialConcentration>+&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Reactions[R1_co],ParameterGroup=Parameters,Parameter=k1,Reference=Value>*&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Reactions[R2_co],ParameterGroup=Parameters,Parameter=k1,Reference=Value>*&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Reactions[R3_co],ParameterGroup=Parameters,Parameter=k1,Reference=Value>*&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Reactions[R8_co],ParameterGroup=Parameters,Parameter=k1,Reference=Value>*&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung],Vector=Metabolites[O2],Reference=InitialConcentration>^3*&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung],Vector=Metabolites[CO],Reference=InitialConcentration>))
         </Expression>
       </ModelValue>
-      <ModelValue key="ModelValue_17" name="e" simulationType="assignment" addNoise="false">
+      <ModelValue key="ModelValue_36" name="e" simulationType="assignment" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<rdf:Description rdf:about="#ModelValue_17">
+<rdf:RDF
+xmlns:dcterms="http://purl.org/dc/terms/"
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:Description rdf:about="#ModelValue_36">
 </rdf:Description>
 </rdf:RDF>
         </MiriamAnnotation>
@@ -375,10 +417,12 @@ Reaction scheme where the products are created from the reactants and the change
           1/(umol/l)
         </Unit>
       </ModelValue>
-      <ModelValue key="ModelValue_18" name="f" simulationType="assignment" addNoise="false">
+      <ModelValue key="ModelValue_37" name="f" simulationType="assignment" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<rdf:Description rdf:about="#ModelValue_18">
+<rdf:RDF
+xmlns:dcterms="http://purl.org/dc/terms/"
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:Description rdf:about="#ModelValue_37">
 </rdf:Description>
 </rdf:RDF>
         </MiriamAnnotation>
@@ -389,171 +433,71 @@ Reaction scheme where the products are created from the reactants and the change
           1/(umol/l)^2
         </Unit>
       </ModelValue>
+      <ModelValue key="ModelValue_38" name="g" simulationType="assignment" addNoise="false">
+        <Expression>
+          &lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Reactions[R5_co],ParameterGroup=Parameters,Parameter=k1,Reference=Value>*&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Reactions[R6_co],ParameterGroup=Parameters,Parameter=k1,Reference=Value>*&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Reactions[R7_co],ParameterGroup=Parameters,Parameter=k1,Reference=Value>
+        </Expression>
+        <Unit>
+          1/(umol/l)^3
+        </Unit>
+      </ModelValue>
+      <ModelValue key="ModelValue_39" name="h" simulationType="assignment" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF
+xmlns:dcterms="http://purl.org/dc/terms/"
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:Description rdf:about="#ModelValue_39">
+</rdf:Description>
+</rdf:RDF>
+        </MiriamAnnotation>
+        <Expression>
+          &lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Reactions[R5_co],ParameterGroup=Parameters,Parameter=k1,Reference=Value>*&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Reactions[R6_co],ParameterGroup=Parameters,Parameter=k1,Reference=Value>*&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Reactions[R7_co],ParameterGroup=Parameters,Parameter=k1,Reference=Value>*&lt;CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Reactions[R8_co],ParameterGroup=Parameters,Parameter=k1,Reference=Value>
+        </Expression>
+        <Unit>
+          1/(umol/l)^3
+        </Unit>
+      </ModelValue>
     </ListOfModelValues>
     <ListOfReactions>
-      <Reaction key="Reaction_0" name="R1" reversible="true" fast="false" addNoise="false">
+      <Reaction key="Reaction_4" name="R1" reversible="true" fast="false" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<rdf:Description rdf:about="#Reaction_0">
+<rdf:RDF
+xmlns:dcterms="http://purl.org/dc/terms/"
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:Description rdf:about="#Reaction_4">
 </rdf:Description>
 </rdf:RDF>
         </MiriamAnnotation>
         <ListOfSubstrates>
-          <Substrate metabolite="Metabolite_0" stoichiometry="1"/>
-          <Substrate metabolite="Metabolite_5" stoichiometry="1"/>
+          <Substrate metabolite="Metabolite_8" stoichiometry="1"/>
+          <Substrate metabolite="Metabolite_13" stoichiometry="1"/>
         </ListOfSubstrates>
         <ListOfProducts>
-          <Product metabolite="Metabolite_1" stoichiometry="1"/>
+          <Product metabolite="Metabolite_9" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_251" name="k1" value="0.0133563"/>
-          <Constant key="Parameter_252" name="k2" value="1"/>
+          <Constant key="Parameter_204" name="k1" value="0.0133563"/>
+          <Constant key="Parameter_206" name="k2" value="1"/>
         </ListOfConstants>
         <KineticLaw function="Function_14" unitType="Default" scalingCompartment="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[Normal_lung]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_69">
-              <SourceParameter reference="Parameter_251"/>
+              <SourceParameter reference="Parameter_204"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_68">
-              <SourceParameter reference="Metabolite_0"/>
-              <SourceParameter reference="Metabolite_5"/>
-            </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_78">
-              <SourceParameter reference="Parameter_252"/>
-            </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_79">
-              <SourceParameter reference="Metabolite_1"/>
-            </CallParameter>
-          </ListOfCallParameters>
-        </KineticLaw>
-      </Reaction>
-      <Reaction key="Reaction_1" name="R2" reversible="true" fast="false" addNoise="false">
-        <MiriamAnnotation>
-<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<rdf:Description rdf:about="#Reaction_1">
-</rdf:Description>
-</rdf:RDF>
-        </MiriamAnnotation>
-        <ListOfSubstrates>
-          <Substrate metabolite="Metabolite_1" stoichiometry="1"/>
-          <Substrate metabolite="Metabolite_5" stoichiometry="1"/>
-        </ListOfSubstrates>
-        <ListOfProducts>
-          <Product metabolite="Metabolite_2" stoichiometry="1"/>
-        </ListOfProducts>
-        <ListOfConstants>
-          <Constant key="Parameter_253" name="k1" value="0.0227233"/>
-          <Constant key="Parameter_254" name="k2" value="1"/>
-        </ListOfConstants>
-        <KineticLaw function="Function_14" unitType="Default" scalingCompartment="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[Normal_lung]">
-          <ListOfCallParameters>
-            <CallParameter functionParameter="FunctionParameter_69">
-              <SourceParameter reference="Parameter_253"/>
-            </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_68">
-              <SourceParameter reference="Metabolite_1"/>
-              <SourceParameter reference="Metabolite_5"/>
-            </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_78">
-              <SourceParameter reference="Parameter_254"/>
-            </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_79">
-              <SourceParameter reference="Metabolite_2"/>
-            </CallParameter>
-          </ListOfCallParameters>
-        </KineticLaw>
-      </Reaction>
-      <Reaction key="Reaction_2" name="R3" reversible="true" fast="false" addNoise="false">
-        <ListOfSubstrates>
-          <Substrate metabolite="Metabolite_2" stoichiometry="1"/>
-          <Substrate metabolite="Metabolite_5" stoichiometry="1"/>
-        </ListOfSubstrates>
-        <ListOfProducts>
-          <Product metabolite="Metabolite_3" stoichiometry="1"/>
-        </ListOfProducts>
-        <ListOfConstants>
-          <Constant key="Parameter_255" name="k1" value="0.0166738"/>
-          <Constant key="Parameter_256" name="k2" value="1"/>
-        </ListOfConstants>
-        <KineticLaw function="Function_14" unitType="Default" scalingCompartment="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[Normal_lung]">
-          <ListOfCallParameters>
-            <CallParameter functionParameter="FunctionParameter_69">
-              <SourceParameter reference="Parameter_255"/>
-            </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_68">
-              <SourceParameter reference="Metabolite_2"/>
-              <SourceParameter reference="Metabolite_5"/>
-            </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_78">
-              <SourceParameter reference="Parameter_256"/>
-            </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_79">
-              <SourceParameter reference="Metabolite_3"/>
-            </CallParameter>
-          </ListOfCallParameters>
-        </KineticLaw>
-      </Reaction>
-      <Reaction key="Reaction_3" name="R4" reversible="true" fast="false" addNoise="false">
-        <ListOfSubstrates>
-          <Substrate metabolite="Metabolite_3" stoichiometry="1"/>
-          <Substrate metabolite="Metabolite_5" stoichiometry="1"/>
-        </ListOfSubstrates>
-        <ListOfProducts>
-          <Product metabolite="Metabolite_4" stoichiometry="1"/>
-        </ListOfProducts>
-        <ListOfConstants>
-          <Constant key="Parameter_257" name="k1" value="0.143874"/>
-          <Constant key="Parameter_258" name="k2" value="1"/>
-        </ListOfConstants>
-        <KineticLaw function="Function_14" unitType="Default" scalingCompartment="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[Normal_lung]">
-          <ListOfCallParameters>
-            <CallParameter functionParameter="FunctionParameter_69">
-              <SourceParameter reference="Parameter_257"/>
-            </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_68">
-              <SourceParameter reference="Metabolite_3"/>
-              <SourceParameter reference="Metabolite_5"/>
-            </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_78">
-              <SourceParameter reference="Parameter_258"/>
-            </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_79">
-              <SourceParameter reference="Metabolite_4"/>
-            </CallParameter>
-          </ListOfCallParameters>
-        </KineticLaw>
-      </Reaction>
-      <Reaction key="Reaction_4" name="R2_co" reversible="true" fast="false" addNoise="false">
-        <ListOfSubstrates>
-          <Substrate metabolite="Metabolite_7" stoichiometry="1"/>
-          <Substrate metabolite="Metabolite_11" stoichiometry="1"/>
-        </ListOfSubstrates>
-        <ListOfProducts>
-          <Product metabolite="Metabolite_8" stoichiometry="1"/>
-        </ListOfProducts>
-        <ListOfConstants>
-          <Constant key="Parameter_259" name="k1" value="0.0227233"/>
-          <Constant key="Parameter_260" name="k2" value="1"/>
-        </ListOfConstants>
-        <KineticLaw function="Function_14" unitType="Default" scalingCompartment="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung]">
-          <ListOfCallParameters>
-            <CallParameter functionParameter="FunctionParameter_69">
-              <SourceParameter reference="Parameter_259"/>
-            </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_68">
-              <SourceParameter reference="Metabolite_7"/>
-              <SourceParameter reference="Metabolite_11"/>
-            </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_78">
-              <SourceParameter reference="Parameter_260"/>
-            </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_8"/>
+              <SourceParameter reference="Metabolite_13"/>
+            </CallParameter>
+            <CallParameter functionParameter="FunctionParameter_78">
+              <SourceParameter reference="Parameter_206"/>
+            </CallParameter>
+            <CallParameter functionParameter="FunctionParameter_79">
+              <SourceParameter reference="Metabolite_9"/>
             </CallParameter>
           </ListOfCallParameters>
         </KineticLaw>
       </Reaction>
-      <Reaction key="Reaction_5" name="R3_co" reversible="true" fast="false" addNoise="false">
+      <Reaction key="Reaction_5" name="R2" reversible="true" fast="false" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 <rdf:Description rdf:about="#Reaction_5">
@@ -561,57 +505,27 @@ Reaction scheme where the products are created from the reactants and the change
 </rdf:RDF>
         </MiriamAnnotation>
         <ListOfSubstrates>
-          <Substrate metabolite="Metabolite_8" stoichiometry="1"/>
-          <Substrate metabolite="Metabolite_11" stoichiometry="1"/>
-        </ListOfSubstrates>
-        <ListOfProducts>
-          <Product metabolite="Metabolite_9" stoichiometry="1"/>
-        </ListOfProducts>
-        <ListOfConstants>
-          <Constant key="Parameter_261" name="k1" value="0.0166738"/>
-          <Constant key="Parameter_262" name="k2" value="1"/>
-        </ListOfConstants>
-        <KineticLaw function="Function_14" unitType="Default" scalingCompartment="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung]">
-          <ListOfCallParameters>
-            <CallParameter functionParameter="FunctionParameter_69">
-              <SourceParameter reference="Parameter_261"/>
-            </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_68">
-              <SourceParameter reference="Metabolite_8"/>
-              <SourceParameter reference="Metabolite_11"/>
-            </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_78">
-              <SourceParameter reference="Parameter_262"/>
-            </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_79">
-              <SourceParameter reference="Metabolite_9"/>
-            </CallParameter>
-          </ListOfCallParameters>
-        </KineticLaw>
-      </Reaction>
-      <Reaction key="Reaction_6" name="R4_co" reversible="true" fast="false" addNoise="false">
-        <ListOfSubstrates>
           <Substrate metabolite="Metabolite_9" stoichiometry="1"/>
-          <Substrate metabolite="Metabolite_11" stoichiometry="1"/>
+          <Substrate metabolite="Metabolite_13" stoichiometry="1"/>
         </ListOfSubstrates>
         <ListOfProducts>
           <Product metabolite="Metabolite_10" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_263" name="k1" value="0.143874"/>
-          <Constant key="Parameter_264" name="k2" value="1"/>
+          <Constant key="Parameter_207" name="k1" value="0.0227233"/>
+          <Constant key="Parameter_203" name="k2" value="1"/>
         </ListOfConstants>
-        <KineticLaw function="Function_14" unitType="Default" scalingCompartment="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung]">
+        <KineticLaw function="Function_14" unitType="Default" scalingCompartment="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[Normal_lung]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_69">
-              <SourceParameter reference="Parameter_263"/>
+              <SourceParameter reference="Parameter_207"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_68">
               <SourceParameter reference="Metabolite_9"/>
-              <SourceParameter reference="Metabolite_11"/>
+              <SourceParameter reference="Metabolite_13"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_78">
-              <SourceParameter reference="Parameter_264"/>
+              <SourceParameter reference="Parameter_203"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_10"/>
@@ -619,7 +533,45 @@ Reaction scheme where the products are created from the reactants and the change
           </ListOfCallParameters>
         </KineticLaw>
       </Reaction>
-      <Reaction key="Reaction_7" name="R1_co" reversible="true" fast="false" addNoise="false">
+      <Reaction key="Reaction_6" name="R3" reversible="true" fast="false" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF
+xmlns:dcterms="http://purl.org/dc/terms/"
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:Description rdf:about="#Reaction_6">
+</rdf:Description>
+</rdf:RDF>
+        </MiriamAnnotation>
+        <ListOfSubstrates>
+          <Substrate metabolite="Metabolite_10" stoichiometry="1"/>
+          <Substrate metabolite="Metabolite_13" stoichiometry="1"/>
+        </ListOfSubstrates>
+        <ListOfProducts>
+          <Product metabolite="Metabolite_11" stoichiometry="1"/>
+        </ListOfProducts>
+        <ListOfConstants>
+          <Constant key="Parameter_205" name="k1" value="0.0166738"/>
+          <Constant key="Parameter_202" name="k2" value="1"/>
+        </ListOfConstants>
+        <KineticLaw function="Function_14" unitType="Default" scalingCompartment="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[Normal_lung]">
+          <ListOfCallParameters>
+            <CallParameter functionParameter="FunctionParameter_69">
+              <SourceParameter reference="Parameter_205"/>
+            </CallParameter>
+            <CallParameter functionParameter="FunctionParameter_68">
+              <SourceParameter reference="Metabolite_10"/>
+              <SourceParameter reference="Metabolite_13"/>
+            </CallParameter>
+            <CallParameter functionParameter="FunctionParameter_78">
+              <SourceParameter reference="Parameter_202"/>
+            </CallParameter>
+            <CallParameter functionParameter="FunctionParameter_79">
+              <SourceParameter reference="Metabolite_11"/>
+            </CallParameter>
+          </ListOfCallParameters>
+        </KineticLaw>
+      </Reaction>
+      <Reaction key="Reaction_7" name="R4" reversible="true" fast="false" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 <rdf:Description rdf:about="#Reaction_7">
@@ -627,88 +579,254 @@ Reaction scheme where the products are created from the reactants and the change
 </rdf:RDF>
         </MiriamAnnotation>
         <ListOfSubstrates>
-          <Substrate metabolite="Metabolite_6" stoichiometry="1"/>
           <Substrate metabolite="Metabolite_11" stoichiometry="1"/>
+          <Substrate metabolite="Metabolite_13" stoichiometry="1"/>
         </ListOfSubstrates>
         <ListOfProducts>
-          <Product metabolite="Metabolite_7" stoichiometry="1"/>
+          <Product metabolite="Metabolite_12" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_265" name="k1" value="0.0133563"/>
-          <Constant key="Parameter_266" name="k2" value="1"/>
+          <Constant key="Parameter_201" name="k1" value="0.143874"/>
+          <Constant key="Parameter_197" name="k2" value="1"/>
+        </ListOfConstants>
+        <KineticLaw function="Function_14" unitType="Default" scalingCompartment="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[Normal_lung]">
+          <ListOfCallParameters>
+            <CallParameter functionParameter="FunctionParameter_69">
+              <SourceParameter reference="Parameter_201"/>
+            </CallParameter>
+            <CallParameter functionParameter="FunctionParameter_68">
+              <SourceParameter reference="Metabolite_11"/>
+              <SourceParameter reference="Metabolite_13"/>
+            </CallParameter>
+            <CallParameter functionParameter="FunctionParameter_78">
+              <SourceParameter reference="Parameter_197"/>
+            </CallParameter>
+            <CallParameter functionParameter="FunctionParameter_79">
+              <SourceParameter reference="Metabolite_12"/>
+            </CallParameter>
+          </ListOfCallParameters>
+        </KineticLaw>
+      </Reaction>
+      <Reaction key="Reaction_8" name="R2_co" reversible="true" fast="false" addNoise="false">
+        <ListOfSubstrates>
+          <Substrate metabolite="Metabolite_15" stoichiometry="1"/>
+          <Substrate metabolite="Metabolite_19" stoichiometry="1"/>
+        </ListOfSubstrates>
+        <ListOfProducts>
+          <Product metabolite="Metabolite_16" stoichiometry="1"/>
+        </ListOfProducts>
+        <ListOfConstants>
+          <Constant key="Parameter_129" name="k1" value="0.0227233"/>
+          <Constant key="Parameter_125" name="k2" value="1"/>
         </ListOfConstants>
         <KineticLaw function="Function_14" unitType="Default" scalingCompartment="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_69">
-              <SourceParameter reference="Parameter_265"/>
+              <SourceParameter reference="Parameter_129"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_68">
-              <SourceParameter reference="Metabolite_6"/>
-              <SourceParameter reference="Metabolite_11"/>
+              <SourceParameter reference="Metabolite_15"/>
+              <SourceParameter reference="Metabolite_19"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_78">
-              <SourceParameter reference="Parameter_266"/>
+              <SourceParameter reference="Parameter_125"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
-              <SourceParameter reference="Metabolite_7"/>
+              <SourceParameter reference="Metabolite_16"/>
             </CallParameter>
           </ListOfCallParameters>
         </KineticLaw>
       </Reaction>
-      <Reaction key="Reaction_8" name="R5_co" reversible="false" fast="false" addNoise="false">
+      <Reaction key="Reaction_9" name="R3_co" reversible="true" fast="false" addNoise="false">
         <ListOfSubstrates>
-          <Substrate metabolite="Metabolite_6" stoichiometry="1"/>
-          <Substrate metabolite="Metabolite_12" stoichiometry="1"/>
+          <Substrate metabolite="Metabolite_16" stoichiometry="1"/>
+          <Substrate metabolite="Metabolite_19" stoichiometry="1"/>
         </ListOfSubstrates>
         <ListOfProducts>
-          <Product metabolite="Metabolite_13" stoichiometry="1"/>
+          <Product metabolite="Metabolite_17" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_267" name="k1" value="3.125"/>
+          <Constant key="Parameter_200" name="k1" value="0.0166738"/>
+          <Constant key="Parameter_198" name="k2" value="1"/>
         </ListOfConstants>
-        <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung]">
+        <KineticLaw function="Function_14" unitType="Default" scalingCompartment="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung]">
           <ListOfCallParameters>
-            <CallParameter functionParameter="FunctionParameter_80">
-              <SourceParameter reference="Parameter_267"/>
+            <CallParameter functionParameter="FunctionParameter_69">
+              <SourceParameter reference="Parameter_200"/>
             </CallParameter>
-            <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Metabolite_6"/>
-              <SourceParameter reference="Metabolite_12"/>
+            <CallParameter functionParameter="FunctionParameter_68">
+              <SourceParameter reference="Metabolite_16"/>
+              <SourceParameter reference="Metabolite_19"/>
+            </CallParameter>
+            <CallParameter functionParameter="FunctionParameter_78">
+              <SourceParameter reference="Parameter_198"/>
+            </CallParameter>
+            <CallParameter functionParameter="FunctionParameter_79">
+              <SourceParameter reference="Metabolite_17"/>
             </CallParameter>
           </ListOfCallParameters>
         </KineticLaw>
       </Reaction>
-      <Reaction key="Reaction_9" name="R6_co" reversible="false" fast="false" addNoise="false">
+      <Reaction key="Reaction_10" name="R4_co" reversible="true" fast="false" addNoise="false">
         <ListOfSubstrates>
-          <Substrate metabolite="Metabolite_7" stoichiometry="1"/>
-          <Substrate metabolite="Metabolite_12" stoichiometry="1"/>
+          <Substrate metabolite="Metabolite_17" stoichiometry="1"/>
+          <Substrate metabolite="Metabolite_19" stoichiometry="1"/>
         </ListOfSubstrates>
         <ListOfProducts>
-          <Product metabolite="Metabolite_14" stoichiometry="1"/>
+          <Product metabolite="Metabolite_18" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_269" name="k1" value="0.11092"/>
+          <Constant key="Parameter_199" name="k1" value="0.143874"/>
+          <Constant key="Parameter_83" name="k2" value="1"/>
+        </ListOfConstants>
+        <KineticLaw function="Function_14" unitType="Default" scalingCompartment="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung]">
+          <ListOfCallParameters>
+            <CallParameter functionParameter="FunctionParameter_69">
+              <SourceParameter reference="Parameter_199"/>
+            </CallParameter>
+            <CallParameter functionParameter="FunctionParameter_68">
+              <SourceParameter reference="Metabolite_17"/>
+              <SourceParameter reference="Metabolite_19"/>
+            </CallParameter>
+            <CallParameter functionParameter="FunctionParameter_78">
+              <SourceParameter reference="Parameter_83"/>
+            </CallParameter>
+            <CallParameter functionParameter="FunctionParameter_79">
+              <SourceParameter reference="Metabolite_18"/>
+            </CallParameter>
+          </ListOfCallParameters>
+        </KineticLaw>
+      </Reaction>
+      <Reaction key="Reaction_11" name="R1_co" reversible="true" fast="false" addNoise="false">
+        <ListOfSubstrates>
+          <Substrate metabolite="Metabolite_14" stoichiometry="1"/>
+          <Substrate metabolite="Metabolite_19" stoichiometry="1"/>
+        </ListOfSubstrates>
+        <ListOfProducts>
+          <Product metabolite="Metabolite_15" stoichiometry="1"/>
+        </ListOfProducts>
+        <ListOfConstants>
+          <Constant key="Parameter_128" name="k1" value="0.0133563"/>
+          <Constant key="Parameter_127" name="k2" value="1"/>
+        </ListOfConstants>
+        <KineticLaw function="Function_14" unitType="Default" scalingCompartment="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung]">
+          <ListOfCallParameters>
+            <CallParameter functionParameter="FunctionParameter_69">
+              <SourceParameter reference="Parameter_128"/>
+            </CallParameter>
+            <CallParameter functionParameter="FunctionParameter_68">
+              <SourceParameter reference="Metabolite_14"/>
+              <SourceParameter reference="Metabolite_19"/>
+            </CallParameter>
+            <CallParameter functionParameter="FunctionParameter_78">
+              <SourceParameter reference="Parameter_127"/>
+            </CallParameter>
+            <CallParameter functionParameter="FunctionParameter_79">
+              <SourceParameter reference="Metabolite_15"/>
+            </CallParameter>
+          </ListOfCallParameters>
+        </KineticLaw>
+      </Reaction>
+      <Reaction key="Reaction_12" name="R5_co" reversible="false" fast="false" addNoise="false">
+        <ListOfSubstrates>
+          <Substrate metabolite="Metabolite_14" stoichiometry="1"/>
+          <Substrate metabolite="Metabolite_20" stoichiometry="1"/>
+        </ListOfSubstrates>
+        <ListOfProducts>
+          <Product metabolite="Metabolite_21" stoichiometry="1"/>
+        </ListOfProducts>
+        <ListOfConstants>
+          <Constant key="Parameter_111" name="k1" value="3.125"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_80">
-              <SourceParameter reference="Parameter_269"/>
+              <SourceParameter reference="Parameter_111"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Metabolite_7"/>
-              <SourceParameter reference="Metabolite_12"/>
+              <SourceParameter reference="Metabolite_14"/>
+              <SourceParameter reference="Metabolite_20"/>
+            </CallParameter>
+          </ListOfCallParameters>
+        </KineticLaw>
+      </Reaction>
+      <Reaction key="Reaction_13" name="R6_co" reversible="false" fast="false" addNoise="false">
+        <ListOfSubstrates>
+          <Substrate metabolite="Metabolite_15" stoichiometry="1"/>
+          <Substrate metabolite="Metabolite_20" stoichiometry="1"/>
+        </ListOfSubstrates>
+        <ListOfProducts>
+          <Product metabolite="Metabolite_22" stoichiometry="1"/>
+        </ListOfProducts>
+        <ListOfConstants>
+          <Constant key="Parameter_90" name="k1" value="4.6"/>
+        </ListOfConstants>
+        <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung]">
+          <ListOfCallParameters>
+            <CallParameter functionParameter="FunctionParameter_80">
+              <SourceParameter reference="Parameter_90"/>
+            </CallParameter>
+            <CallParameter functionParameter="FunctionParameter_81">
+              <SourceParameter reference="Metabolite_15"/>
+              <SourceParameter reference="Metabolite_20"/>
+            </CallParameter>
+          </ListOfCallParameters>
+        </KineticLaw>
+      </Reaction>
+      <Reaction key="Reaction_14" name="R7_co" reversible="false" fast="false" addNoise="false">
+        <ListOfSubstrates>
+          <Substrate metabolite="Metabolite_16" stoichiometry="1"/>
+          <Substrate metabolite="Metabolite_20" stoichiometry="1"/>
+        </ListOfSubstrates>
+        <ListOfProducts>
+          <Product metabolite="Metabolite_23" stoichiometry="1"/>
+        </ListOfProducts>
+        <ListOfConstants>
+          <Constant key="Parameter_104" name="k1" value="3.68"/>
+        </ListOfConstants>
+        <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung]">
+          <ListOfCallParameters>
+            <CallParameter functionParameter="FunctionParameter_80">
+              <SourceParameter reference="Parameter_104"/>
+            </CallParameter>
+            <CallParameter functionParameter="FunctionParameter_81">
+              <SourceParameter reference="Metabolite_16"/>
+              <SourceParameter reference="Metabolite_20"/>
+            </CallParameter>
+          </ListOfCallParameters>
+        </KineticLaw>
+      </Reaction>
+      <Reaction key="Reaction_15" name="R8_co" reversible="false" fast="false" addNoise="false">
+        <ListOfSubstrates>
+          <Substrate metabolite="Metabolite_17" stoichiometry="1"/>
+          <Substrate metabolite="Metabolite_20" stoichiometry="1"/>
+        </ListOfSubstrates>
+        <ListOfProducts>
+          <Product metabolite="Metabolite_24" stoichiometry="1"/>
+        </ListOfProducts>
+        <ListOfConstants>
+          <Constant key="Parameter_130" name="k1" value="32"/>
+        </ListOfConstants>
+        <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung]">
+          <ListOfCallParameters>
+            <CallParameter functionParameter="FunctionParameter_80">
+              <SourceParameter reference="Parameter_130"/>
+            </CallParameter>
+            <CallParameter functionParameter="FunctionParameter_81">
+              <SourceParameter reference="Metabolite_17"/>
+              <SourceParameter reference="Metabolite_20"/>
             </CallParameter>
           </ListOfCallParameters>
         </KineticLaw>
       </Reaction>
     </ListOfReactions>
-    <ListOfModelParameterSets activeSet="ModelParameterSet_1">
-      <ModelParameterSet key="ModelParameterSet_1" name="Initial State">
+    <ListOfModelParameterSets activeSet="ModelParameterSet_0">
+      <ModelParameterSet key="ModelParameterSet_0" name="Initial State">
         <MiriamAnnotation>
 <rdf:RDF
 xmlns:dcterms="http://purl.org/dc/terms/"
 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<rdf:Description rdf:about="#ModelParameterSet_1">
+<rdf:Description rdf:about="#ModelParameterSet_0">
 </rdf:Description>
 </rdf:RDF>
         </MiriamAnnotation>
@@ -732,12 +850,14 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
           <ModelParameter cn="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung],Vector=Metabolites[HbO23]" value="0" type="Species" simulationType="reactions"/>
           <ModelParameter cn="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung],Vector=Metabolites[HbO24]" value="0" type="Species" simulationType="reactions"/>
           <ModelParameter cn="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung],Vector=Metabolites[O2]" value="78287829.879999995" type="Species" simulationType="assignment"/>
-          <ModelParameter cn="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung],Vector=Metabolites[CO]" value="333626598.10399997" type="Species" simulationType="assignment"/>
+          <ModelParameter cn="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung],Vector=Metabolites[CO]" value="33362659.810400002" type="Species" simulationType="assignment"/>
           <ModelParameter cn="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung],Vector=Metabolites[HbCO]" value="0" type="Species" simulationType="reactions"/>
           <ModelParameter cn="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung],Vector=Metabolites[HbCOO2]" value="602214.076" type="Species" simulationType="reactions"/>
+          <ModelParameter cn="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung],Vector=Metabolites[HbCOO22]" value="602214.076" type="Species" simulationType="reactions"/>
+          <ModelParameter cn="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung],Vector=Metabolites[HbCOO23]" value="602214.076" type="Species" simulationType="reactions"/>
         </ModelParameterGroup>
         <ModelParameterGroup cn="String=Initial Global Quantities" type="Group">
-          <ModelParameter cn="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[Relative_Saturation_calculate]" value="0.0001086484137331595" type="ModelValue" simulationType="assignment"/>
+          <ModelParameter cn="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[Relative_Saturation_calculate]" value="0" type="ModelValue" simulationType="assignment"/>
           <ModelParameter cn="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[Relative_Saturation_hill_KA]" value="0.96245013071103303" type="ModelValue" simulationType="assignment"/>
           <ModelParameter cn="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[Hill_nH]" value="2.7000000000000002" type="ModelValue" simulationType="fixed"/>
           <ModelParameter cn="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[KA_hemoglobin_oxygen]" value="39.100000000000001" type="ModelValue" simulationType="fixed"/>
@@ -750,12 +870,14 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
           <ModelParameter cn="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[c]" value="5.0604851575441013e-06" type="ModelValue" simulationType="assignment"/>
           <ModelParameter cn="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[d]" value="7.2807224155650007e-07" type="ModelValue" simulationType="assignment"/>
           <ModelParameter cn="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[Saturation_O2_normal]" value="0.96630527203926753" type="ModelValue" simulationType="assignment"/>
-          <ModelParameter cn="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[COHb_percent]" value="0.00043459365493263801" type="ModelValue" simulationType="assignment"/>
+          <ModelParameter cn="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[COHb_percent]" value="0.0013026487190620929" type="ModelValue" simulationType="assignment"/>
           <ModelParameter cn="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[alpha_CO]" value="554" type="ModelValue" simulationType="fixed"/>
-          <ModelParameter cn="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[PCO]" value="1" type="ModelValue" simulationType="fixed"/>
-          <ModelParameter cn="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[Saturation_O2_copart]" value="0.23996130939829219" type="ModelValue" simulationType="assignment"/>
+          <ModelParameter cn="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[PCO]" value="0.10000000000000001" type="ModelValue" simulationType="fixed"/>
+          <ModelParameter cn="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[Saturation_O2_copart]" value="0.72391326482251739" type="ModelValue" simulationType="assignment"/>
           <ModelParameter cn="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[e]" value="3.125" type="ModelValue" simulationType="assignment"/>
-          <ModelParameter cn="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[f]" value="0.34662500000000002" type="ModelValue" simulationType="assignment"/>
+          <ModelParameter cn="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[f]" value="14.374999999999998" type="ModelValue" simulationType="assignment"/>
+          <ModelParameter cn="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[g]" value="52.899999999999999" type="ModelValue" simulationType="assignment"/>
+          <ModelParameter cn="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[h]" value="1692.8" type="ModelValue" simulationType="assignment"/>
         </ModelParameterGroup>
         <ModelParameterGroup cn="String=Kinetic Parameters" type="Group">
           <ModelParameterGroup cn="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Reactions[R1]" type="Reaction">
@@ -794,14 +916,20 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
             <ModelParameter cn="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Reactions[R5_co],ParameterGroup=Parameters,Parameter=k1" value="3.125" type="ReactionParameter" simulationType="fixed"/>
           </ModelParameterGroup>
           <ModelParameterGroup cn="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Reactions[R6_co]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Reactions[R6_co],ParameterGroup=Parameters,Parameter=k1" value="0.11092" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Reactions[R6_co],ParameterGroup=Parameters,Parameter=k1" value="4.5999999999999996" type="ReactionParameter" simulationType="fixed"/>
+          </ModelParameterGroup>
+          <ModelParameterGroup cn="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Reactions[R7_co]" type="Reaction">
+            <ModelParameter cn="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Reactions[R7_co],ParameterGroup=Parameters,Parameter=k1" value="3.6800000000000002" type="ReactionParameter" simulationType="fixed"/>
+          </ModelParameterGroup>
+          <ModelParameterGroup cn="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Reactions[R8_co]" type="Reaction">
+            <ModelParameter cn="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Reactions[R8_co],ParameterGroup=Parameters,Parameter=k1" value="32" type="ReactionParameter" simulationType="fixed"/>
           </ModelParameterGroup>
         </ModelParameterGroup>
       </ModelParameterSet>
-      <ModelParameterSet key="ModelParameterSet_3" name="PE: 2025-04-06T02:16:19Z Exp: Original">
+      <ModelParameterSet key="ModelParameterSet_5" name="PE: 2025-04-06T02:16:19Z Exp: Original">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<rdf:Description rdf:about="#ModelParameterSet_3">
+<rdf:Description rdf:about="#ModelParameterSet_5">
 </rdf:Description>
 </rdf:RDF>
         </MiriamAnnotation>
@@ -853,10 +981,10 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
           </ModelParameterGroup>
         </ModelParameterGroup>
       </ModelParameterSet>
-      <ModelParameterSet key="ModelParameterSet_4" name="PE: 2025-04-06T02:16:19Z Exp: Experiment">
+      <ModelParameterSet key="ModelParameterSet_6" name="PE: 2025-04-06T02:16:19Z Exp: Experiment">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<rdf:Description rdf:about="#ModelParameterSet_4">
+<rdf:Description rdf:about="#ModelParameterSet_6">
 </rdf:Description>
 </rdf:RDF>
         </MiriamAnnotation>
@@ -910,51 +1038,55 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
       </ModelParameterSet>
     </ListOfModelParameterSets>
     <StateTemplate>
-      <StateTemplateVariable objectReference="Model_1"/>
-      <StateTemplateVariable objectReference="Metabolite_7"/>
-      <StateTemplateVariable objectReference="Metabolite_1"/>
-      <StateTemplateVariable objectReference="Metabolite_3"/>
-      <StateTemplateVariable objectReference="Metabolite_9"/>
-      <StateTemplateVariable objectReference="Metabolite_6"/>
-      <StateTemplateVariable objectReference="Metabolite_8"/>
-      <StateTemplateVariable objectReference="Metabolite_2"/>
-      <StateTemplateVariable objectReference="Metabolite_14"/>
-      <StateTemplateVariable objectReference="Metabolite_4"/>
-      <StateTemplateVariable objectReference="Metabolite_10"/>
-      <StateTemplateVariable objectReference="Metabolite_13"/>
-      <StateTemplateVariable objectReference="Metabolite_0"/>
-      <StateTemplateVariable objectReference="Metabolite_5"/>
+      <StateTemplateVariable objectReference="Model_0"/>
+      <StateTemplateVariable objectReference="Metabolite_15"/>
+      <StateTemplateVariable objectReference="Metabolite_17"/>
+      <StateTemplateVariable objectReference="Metabolite_16"/>
       <StateTemplateVariable objectReference="Metabolite_11"/>
+      <StateTemplateVariable objectReference="Metabolite_9"/>
+      <StateTemplateVariable objectReference="Metabolite_14"/>
+      <StateTemplateVariable objectReference="Metabolite_10"/>
+      <StateTemplateVariable objectReference="Metabolite_18"/>
+      <StateTemplateVariable objectReference="Metabolite_22"/>
+      <StateTemplateVariable objectReference="Metabolite_23"/>
       <StateTemplateVariable objectReference="Metabolite_12"/>
-      <StateTemplateVariable objectReference="ModelValue_0"/>
-      <StateTemplateVariable objectReference="ModelValue_1"/>
-      <StateTemplateVariable objectReference="ModelValue_4"/>
-      <StateTemplateVariable objectReference="ModelValue_5"/>
-      <StateTemplateVariable objectReference="ModelValue_8"/>
-      <StateTemplateVariable objectReference="ModelValue_9"/>
-      <StateTemplateVariable objectReference="ModelValue_10"/>
-      <StateTemplateVariable objectReference="ModelValue_11"/>
-      <StateTemplateVariable objectReference="ModelValue_12"/>
-      <StateTemplateVariable objectReference="ModelValue_13"/>
-      <StateTemplateVariable objectReference="ModelValue_16"/>
-      <StateTemplateVariable objectReference="ModelValue_17"/>
-      <StateTemplateVariable objectReference="ModelValue_18"/>
-      <StateTemplateVariable objectReference="Compartment_0"/>
+      <StateTemplateVariable objectReference="Metabolite_21"/>
+      <StateTemplateVariable objectReference="Metabolite_8"/>
+      <StateTemplateVariable objectReference="Metabolite_24"/>
+      <StateTemplateVariable objectReference="Metabolite_13"/>
+      <StateTemplateVariable objectReference="Metabolite_19"/>
+      <StateTemplateVariable objectReference="Metabolite_20"/>
+      <StateTemplateVariable objectReference="ModelValue_19"/>
+      <StateTemplateVariable objectReference="ModelValue_20"/>
+      <StateTemplateVariable objectReference="ModelValue_23"/>
+      <StateTemplateVariable objectReference="ModelValue_24"/>
+      <StateTemplateVariable objectReference="ModelValue_27"/>
+      <StateTemplateVariable objectReference="ModelValue_28"/>
+      <StateTemplateVariable objectReference="ModelValue_29"/>
+      <StateTemplateVariable objectReference="ModelValue_30"/>
+      <StateTemplateVariable objectReference="ModelValue_31"/>
+      <StateTemplateVariable objectReference="ModelValue_32"/>
+      <StateTemplateVariable objectReference="ModelValue_35"/>
+      <StateTemplateVariable objectReference="ModelValue_36"/>
+      <StateTemplateVariable objectReference="ModelValue_37"/>
+      <StateTemplateVariable objectReference="ModelValue_38"/>
+      <StateTemplateVariable objectReference="ModelValue_39"/>
       <StateTemplateVariable objectReference="Compartment_1"/>
-      <StateTemplateVariable objectReference="ModelValue_2"/>
-      <StateTemplateVariable objectReference="ModelValue_3"/>
-      <StateTemplateVariable objectReference="ModelValue_6"/>
-      <StateTemplateVariable objectReference="ModelValue_7"/>
-      <StateTemplateVariable objectReference="ModelValue_14"/>
-      <StateTemplateVariable objectReference="ModelValue_15"/>
+      <StateTemplateVariable objectReference="Compartment_2"/>
+      <StateTemplateVariable objectReference="ModelValue_21"/>
+      <StateTemplateVariable objectReference="ModelValue_22"/>
+      <StateTemplateVariable objectReference="ModelValue_25"/>
+      <StateTemplateVariable objectReference="ModelValue_26"/>
+      <StateTemplateVariable objectReference="ModelValue_33"/>
+      <StateTemplateVariable objectReference="ModelValue_34"/>
     </StateTemplate>
     <InitialState type="initialState">
-      0 0 0 0 0 1385092374.8 0 0 602214.076 0 0 0 1385092374.8 78287829.879999995 78287829.879999995 333626598.10399997 0.0001086484137331595 0.96245013071103303 19901.107469078357 0.96245013071103303 0.0133563 0.00030349921178999997 5.0604851575441013e-06 7.2807224155650007e-07 0.96630527203926753 0.00043459365493263801 0.23996130939829219 3.125 0.34662500000000002 9.9999999999999998e-13 9.9999999999999998e-13 2.7000000000000002 39.100000000000001 1.3 100 554 1 
+      0 0 0 0 0 0 1385092374.8 0 0 602214.076 602214.076 0 0 1385092374.8 602214.076 78287829.879999995 78287829.879999995 33362659.810400002 0 0.96245013071103303 19901.107469078357 0.96245013071103303 0.0133563 0.00030349921178999997 5.0604851575441013e-06 7.2807224155650007e-07 0.96630527203926753 0.0013026487190620929 0.72391326482251739 3.125 14.374999999999998 52.899999999999999 1692.8 9.9999999999999998e-13 9.9999999999999998e-13 2.7000000000000002 39.100000000000001 1.3 100 554 0.10000000000000001 
     </InitialState>
   </Model>
   <ListOfTasks>
-    <Task key="Task_17" name="Steady-State" type="steadyState" scheduled="false" updateModel="false">
-      <Report reference="Report_11" target="" append="1" confirmOverwrite="1"/>
+    <Task key="Task_13" name="Steady-State" type="steadyState" scheduled="false" updateModel="false">
+      <Report reference="Report_10" target="" append="1" confirmOverwrite="1"/>
       <Problem>
         <Parameter name="JacobianRequested" type="bool" value="1"/>
         <Parameter name="StabilityAnalysisRequested" type="bool" value="1"/>
@@ -972,13 +1104,13 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
         <Parameter name="Target Criterion" type="string" value="Distance and Rate"/>
       </Method>
     </Task>
-    <Task key="Task_18" name="Time-Course" type="timeCourse" scheduled="false" updateModel="false">
-      <Report reference="Report_12" target="" append="1" confirmOverwrite="1"/>
+    <Task key="Task_12" name="Time-Course" type="timeCourse" scheduled="false" updateModel="false">
+      <Report reference="Report_9" target="" append="1" confirmOverwrite="1"/>
       <Problem>
         <Parameter name="AutomaticStepSize" type="bool" value="0"/>
         <Parameter name="StepNumber" type="unsignedInteger" value="100"/>
-        <Parameter name="StepSize" type="float" value="0.0001"/>
-        <Parameter name="Duration" type="float" value="0.01"/>
+        <Parameter name="StepSize" type="float" value="0.001"/>
+        <Parameter name="Duration" type="float" value="0.10000000000000001"/>
         <Parameter name="TimeSeriesRequested" type="bool" value="1"/>
         <Parameter name="OutputStartTime" type="float" value="0"/>
         <Parameter name="Output Event" type="bool" value="0"/>
@@ -994,19 +1126,29 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
         <Parameter name="Max Internal Step Size" type="unsignedFloat" value="0"/>
       </Method>
     </Task>
-    <Task key="Task_19" name="Scan" type="scan" scheduled="true" updateModel="true">
+    <Task key="Task_11" name="Scan" type="scan" scheduled="true" updateModel="true">
       <Problem>
         <Parameter name="Subtask" type="unsignedInteger" value="1"/>
         <ParameterGroup name="ScanItems">
           <ParameterGroup name="ScanItem">
-            <Parameter name="Number of steps" type="unsignedInteger" value="10"/>
+            <Parameter name="Number of steps" type="unsignedInteger" value="7"/>
             <Parameter name="Type" type="unsignedInteger" value="1"/>
             <Parameter name="Object" type="cn" value="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[PCO],Reference=InitialValue"/>
-            <Parameter name="Minimum" type="float" value="0.0001"/>
+            <Parameter name="Minimum" type="float" value="1.0000000000000001e-05"/>
             <Parameter name="Maximum" type="float" value="1"/>
             <Parameter name="log" type="bool" value="0"/>
-            <Parameter name="Values" type="string" value="0.001, 0.01, 0.1, 1"/>
+            <Parameter name="Values" type="string" value="0.1"/>
             <Parameter name="Use Values" type="bool" value="1"/>
+          </ParameterGroup>
+          <ParameterGroup name="ScanItem">
+            <Parameter name="Number of steps" type="unsignedInteger" value="2000"/>
+            <Parameter name="Type" type="unsignedInteger" value="1"/>
+            <Parameter name="Object" type="cn" value="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[PO2],Reference=InitialValue"/>
+            <Parameter name="Minimum" type="float" value="0"/>
+            <Parameter name="Maximum" type="float" value="120"/>
+            <Parameter name="log" type="bool" value="0"/>
+            <Parameter name="Values" type="string" value=""/>
+            <Parameter name="Use Values" type="bool" value="0"/>
           </ParameterGroup>
         </ParameterGroup>
         <Parameter name="Subtask Output" type="string" value="subTaskDuring"/>
@@ -1016,15 +1158,15 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
       <Method name="Scan Framework" type="ScanFramework">
       </Method>
     </Task>
-    <Task key="Task_20" name="Elementary Flux Modes" type="fluxMode" scheduled="false" updateModel="false">
-      <Report reference="Report_13" target="" append="1" confirmOverwrite="1"/>
+    <Task key="Task_10" name="Elementary Flux Modes" type="fluxMode" scheduled="false" updateModel="false">
+      <Report reference="Report_8" target="" append="1" confirmOverwrite="1"/>
       <Problem>
       </Problem>
       <Method name="EFM Algorithm" type="EFMAlgorithm">
       </Method>
     </Task>
-    <Task key="Task_21" name="Optimization" type="optimization" scheduled="false" updateModel="false">
-      <Report reference="Report_14" target="" append="1" confirmOverwrite="1"/>
+    <Task key="Task_9" name="Optimization" type="optimization" scheduled="false" updateModel="false">
+      <Report reference="Report_7" target="" append="1" confirmOverwrite="1"/>
       <Problem>
         <Parameter name="Subtask" type="cn" value="CN=Root,Vector=TaskList[Steady-State]"/>
         <ParameterText name="ObjectiveExpression" type="expression">
@@ -1045,8 +1187,8 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
         <Parameter name="Seed" type="unsignedInteger" value="0"/>
       </Method>
     </Task>
-    <Task key="Task_22" name="Parameter Estimation" type="parameterFitting" scheduled="false" updateModel="false">
-      <Report reference="Report_15" target="" append="1" confirmOverwrite="1"/>
+    <Task key="Task_8" name="Parameter Estimation" type="parameterFitting" scheduled="false" updateModel="false">
+      <Report reference="Report_6" target="" append="1" confirmOverwrite="1"/>
       <Problem>
         <Parameter name="Maximize" type="bool" value="0"/>
         <Parameter name="Randomize Start Values" type="bool" value="1"/>
@@ -1056,7 +1198,27 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
             <Parameter name="ObjectCN" type="cn" value="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Reactions[R6_co],ParameterGroup=Parameters,Parameter=k1,Reference=Value"/>
             <Parameter name="LowerBound" type="cn" value="0.000001"/>
             <Parameter name="UpperBound" type="cn" value="1"/>
-            <Parameter name="StartValue" type="float" value="0.0021993385429999999"/>
+            <Parameter name="StartValue" type="float" value="0.033114624799999999"/>
+            <ParameterGroup name="Affected Experiments">
+            </ParameterGroup>
+            <ParameterGroup name="Affected Cross Validation Experiments">
+            </ParameterGroup>
+          </ParameterGroup>
+          <ParameterGroup name="FitItem">
+            <Parameter name="ObjectCN" type="cn" value="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Reactions[R7_co],ParameterGroup=Parameters,Parameter=k1,Reference=Value"/>
+            <Parameter name="LowerBound" type="cn" value="0.000001"/>
+            <Parameter name="UpperBound" type="cn" value="1"/>
+            <Parameter name="StartValue" type="float" value="0.052879987317104436"/>
+            <ParameterGroup name="Affected Experiments">
+            </ParameterGroup>
+            <ParameterGroup name="Affected Cross Validation Experiments">
+            </ParameterGroup>
+          </ParameterGroup>
+          <ParameterGroup name="FitItem">
+            <Parameter name="ObjectCN" type="cn" value="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Reactions[R8_co],ParameterGroup=Parameters,Parameter=k1,Reference=Value"/>
+            <Parameter name="LowerBound" type="cn" value="0.000001"/>
+            <Parameter name="UpperBound" type="cn" value="1"/>
+            <Parameter name="StartValue" type="float" value="0.3200528547587228"/>
             <ParameterGroup name="Affected Experiments">
             </ParameterGroup>
             <ParameterGroup name="Affected Cross Validation Experiments">
@@ -1071,32 +1233,9 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
         <Parameter name="Use Time Sens" type="bool" value="0"/>
         <Parameter name="Time-Sens" type="cn" value=""/>
         <ParameterGroup name="Experiment Set">
-          <ParameterGroup name="Experiment_so2">
-            <Parameter name="Key" type="key" value="Experiment_0"/>
-            <Parameter name="File Name" type="file" value="COHb_SO2_data.csv"/>
-            <Parameter name="First Row" type="unsignedInteger" value="2"/>
-            <Parameter name="Last Row" type="unsignedInteger" value="9"/>
-            <Parameter name="Experiment Type" type="unsignedInteger" value="0"/>
-            <Parameter name="Normalize Weights per Experiment" type="bool" value="1"/>
-            <Parameter name="Separator" type="string" value=","/>
-            <Parameter name="Weight Method" type="unsignedInteger" value="1"/>
-            <Parameter name="Data is Row Oriented" type="bool" value="1"/>
-            <Parameter name="Row containing Names" type="unsignedInteger" value="1"/>
-            <Parameter name="Number of Columns" type="unsignedInteger" value="2"/>
-            <ParameterGroup name="Object Map">
-              <ParameterGroup name="0">
-                <Parameter name="Role" type="unsignedInteger" value="1"/>
-                <Parameter name="Object CN" type="cn" value="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[PO2],Reference=InitialValue"/>
-              </ParameterGroup>
-              <ParameterGroup name="1">
-                <Parameter name="Role" type="unsignedInteger" value="2"/>
-                <Parameter name="Object CN" type="cn" value="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[Saturation_O2_copart],Reference=Value"/>
-              </ParameterGroup>
-            </ParameterGroup>
-          </ParameterGroup>
-          <ParameterGroup name="Experiment">
-            <Parameter name="Key" type="key" value="Experiment_1"/>
-            <Parameter name="File Name" type="file" value="../Undergraduate/CMML3/ICA1/CO_Hb_O2_model/co_cohb_data.csv"/>
+          <ParameterGroup name="Experiment_1">
+            <Parameter name="Key" type="key" value="Experiment_4"/>
+            <Parameter name="File Name" type="file" value="../Undergraduate/CMML3/ICA1-Project3-Model/CO_HbCO_percentage_data.csv"/>
             <Parameter name="First Row" type="unsignedInteger" value="2"/>
             <Parameter name="Last Row" type="unsignedInteger" value="18"/>
             <Parameter name="Experiment Type" type="unsignedInteger" value="0"/>
@@ -1132,10 +1271,10 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
         <Parameter name="Stop after # Stalled Generations" type="unsignedInteger" value="0"/>
       </Method>
     </Task>
-    <Task key="Task_23" name="Metabolic Control Analysis" type="metabolicControlAnalysis" scheduled="false" updateModel="false">
-      <Report reference="Report_16" target="" append="1" confirmOverwrite="1"/>
+    <Task key="Task_7" name="Metabolic Control Analysis" type="metabolicControlAnalysis" scheduled="false" updateModel="false">
+      <Report reference="Report_5" target="" append="1" confirmOverwrite="1"/>
       <Problem>
-        <Parameter name="Steady-State" type="key" value="Task_17"/>
+        <Parameter name="Steady-State" type="key" value="Task_13"/>
       </Problem>
       <Method name="MCA Method (Reder)" type="MCAMethod(Reder)">
         <Parameter name="Modulation Factor" type="unsignedFloat" value="1.0000000000000001e-09"/>
@@ -1143,8 +1282,8 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
         <Parameter name="Use Smallbone" type="bool" value="1"/>
       </Method>
     </Task>
-    <Task key="Task_24" name="Lyapunov Exponents" type="lyapunovExponents" scheduled="false" updateModel="false">
-      <Report reference="Report_17" target="" append="1" confirmOverwrite="1"/>
+    <Task key="Task_6" name="Lyapunov Exponents" type="lyapunovExponents" scheduled="false" updateModel="false">
+      <Report reference="Report_4" target="" append="1" confirmOverwrite="1"/>
       <Problem>
         <Parameter name="ExponentNumber" type="unsignedInteger" value="3"/>
         <Parameter name="DivergenceRequested" type="bool" value="1"/>
@@ -1158,8 +1297,8 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
         <Parameter name="Max Internal Steps" type="unsignedInteger" value="10000"/>
       </Method>
     </Task>
-    <Task key="Task_25" name="Time Scale Separation Analysis" type="timeScaleSeparationAnalysis" scheduled="false" updateModel="false">
-      <Report reference="Report_18" target="" append="1" confirmOverwrite="1"/>
+    <Task key="Task_5" name="Time Scale Separation Analysis" type="timeScaleSeparationAnalysis" scheduled="false" updateModel="false">
+      <Report reference="Report_3" target="" append="1" confirmOverwrite="1"/>
       <Problem>
         <Parameter name="StepNumber" type="unsignedInteger" value="100"/>
         <Parameter name="StepSize" type="float" value="0.01"/>
@@ -1171,8 +1310,8 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
         <Parameter name="Deuflhard Tolerance" type="unsignedFloat" value="0.0001"/>
       </Method>
     </Task>
-    <Task key="Task_26" name="Sensitivities" type="sensitivities" scheduled="false" updateModel="false">
-      <Report reference="Report_19" target="" append="1" confirmOverwrite="1"/>
+    <Task key="Task_16" name="Sensitivities" type="sensitivities" scheduled="false" updateModel="false">
+      <Report reference="Report_2" target="" append="1" confirmOverwrite="1"/>
       <Problem>
         <Parameter name="SubtaskType" type="unsignedInteger" value="1"/>
         <ParameterGroup name="TargetFunctions">
@@ -1195,14 +1334,14 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
         <Parameter name="Delta minimum" type="unsignedFloat" value="9.9999999999999998e-13"/>
       </Method>
     </Task>
-    <Task key="Task_27" name="Moieties" type="moieties" scheduled="false" updateModel="false">
-      <Report reference="Report_20" target="" append="1" confirmOverwrite="1"/>
+    <Task key="Task_15" name="Moieties" type="moieties" scheduled="false" updateModel="false">
+      <Report reference="Report_1" target="" append="1" confirmOverwrite="1"/>
       <Problem>
       </Problem>
       <Method name="Householder Reduction" type="Householder">
       </Method>
     </Task>
-    <Task key="Task_28" name="Cross Section" type="crosssection" scheduled="false" updateModel="false">
+    <Task key="Task_4" name="Cross Section" type="crosssection" scheduled="false" updateModel="false">
       <Problem>
         <Parameter name="AutomaticStepSize" type="bool" value="0"/>
         <Parameter name="StepNumber" type="unsignedInteger" value="100"/>
@@ -1238,15 +1377,15 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
         <Parameter name="Max Internal Step Size" type="unsignedFloat" value="0"/>
       </Method>
     </Task>
-    <Task key="Task_29" name="Linear Noise Approximation" type="linearNoiseApproximation" scheduled="false" updateModel="false">
-      <Report reference="Report_21" target="" append="1" confirmOverwrite="1"/>
+    <Task key="Task_3" name="Linear Noise Approximation" type="linearNoiseApproximation" scheduled="false" updateModel="false">
+      <Report reference="Report_0" target="" append="1" confirmOverwrite="1"/>
       <Problem>
-        <Parameter name="Steady-State" type="key" value="Task_17"/>
+        <Parameter name="Steady-State" type="key" value="Task_13"/>
       </Problem>
       <Method name="Linear Noise Approximation" type="LinearNoiseApproximation">
       </Method>
     </Task>
-    <Task key="Task_30" name="Time-Course Sensitivities" type="timeSensitivities" scheduled="false" updateModel="false">
+    <Task key="Task_2" name="Time-Course Sensitivities" type="timeSensitivities" scheduled="false" updateModel="false">
       <Problem>
         <Parameter name="AutomaticStepSize" type="bool" value="0"/>
         <Parameter name="StepNumber" type="unsignedInteger" value="100"/>
@@ -1273,7 +1412,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
     </Task>
   </ListOfTasks>
   <ListOfReports>
-    <Report key="Report_11" name="Steady-State" taskType="steadyState" separator="&#x09;" precision="6">
+    <Report key="Report_10" name="Steady-State" taskType="steadyState" separator="&#x09;" precision="6">
       <Comment>
         Automatically generated report.
       </Comment>
@@ -1281,7 +1420,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
         <Object cn="CN=Root,Vector=TaskList[Steady-State]"/>
       </Footer>
     </Report>
-    <Report key="Report_12" name="Time-Course" taskType="timeCourse" separator="&#x09;" precision="6">
+    <Report key="Report_9" name="Time-Course" taskType="timeCourse" separator="&#x09;" precision="6">
       <Comment>
         Automatically generated report.
       </Comment>
@@ -1292,7 +1431,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
         <Object cn="CN=Root,Vector=TaskList[Time-Course],Object=Result"/>
       </Footer>
     </Report>
-    <Report key="Report_13" name="Elementary Flux Modes" taskType="fluxMode" separator="&#x09;" precision="6">
+    <Report key="Report_8" name="Elementary Flux Modes" taskType="fluxMode" separator="&#x09;" precision="6">
       <Comment>
         Automatically generated report.
       </Comment>
@@ -1300,7 +1439,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
         <Object cn="CN=Root,Vector=TaskList[Elementary Flux Modes],Object=Result"/>
       </Footer>
     </Report>
-    <Report key="Report_14" name="Optimization" taskType="optimization" separator="&#x09;" precision="6">
+    <Report key="Report_7" name="Optimization" taskType="optimization" separator="&#x09;" precision="6">
       <Comment>
         Automatically generated report.
       </Comment>
@@ -1324,7 +1463,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
         <Object cn="CN=Root,Vector=TaskList[Optimization],Object=Result"/>
       </Footer>
     </Report>
-    <Report key="Report_15" name="Parameter Estimation" taskType="parameterFitting" separator="&#x09;" precision="6">
+    <Report key="Report_6" name="Parameter Estimation" taskType="parameterFitting" separator="&#x09;" precision="6">
       <Comment>
         Automatically generated report.
       </Comment>
@@ -1348,7 +1487,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
         <Object cn="CN=Root,Vector=TaskList[Parameter Estimation],Object=Result"/>
       </Footer>
     </Report>
-    <Report key="Report_16" name="Metabolic Control Analysis" taskType="metabolicControlAnalysis" separator="&#x09;" precision="6">
+    <Report key="Report_5" name="Metabolic Control Analysis" taskType="metabolicControlAnalysis" separator="&#x09;" precision="6">
       <Comment>
         Automatically generated report.
       </Comment>
@@ -1360,7 +1499,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
         <Object cn="CN=Root,Vector=TaskList[Metabolic Control Analysis],Object=Result"/>
       </Footer>
     </Report>
-    <Report key="Report_17" name="Lyapunov Exponents" taskType="lyapunovExponents" separator="&#x09;" precision="6">
+    <Report key="Report_4" name="Lyapunov Exponents" taskType="lyapunovExponents" separator="&#x09;" precision="6">
       <Comment>
         Automatically generated report.
       </Comment>
@@ -1372,7 +1511,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
         <Object cn="CN=Root,Vector=TaskList[Lyapunov Exponents],Object=Result"/>
       </Footer>
     </Report>
-    <Report key="Report_18" name="Time Scale Separation Analysis" taskType="timeScaleSeparationAnalysis" separator="&#x09;" precision="6">
+    <Report key="Report_3" name="Time Scale Separation Analysis" taskType="timeScaleSeparationAnalysis" separator="&#x09;" precision="6">
       <Comment>
         Automatically generated report.
       </Comment>
@@ -1384,7 +1523,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
         <Object cn="CN=Root,Vector=TaskList[Time Scale Separation Analysis],Object=Result"/>
       </Footer>
     </Report>
-    <Report key="Report_19" name="Sensitivities" taskType="sensitivities" separator="&#x09;" precision="6">
+    <Report key="Report_2" name="Sensitivities" taskType="sensitivities" separator="&#x09;" precision="6">
       <Comment>
         Automatically generated report.
       </Comment>
@@ -1396,7 +1535,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
         <Object cn="CN=Root,Vector=TaskList[Sensitivities],Object=Result"/>
       </Footer>
     </Report>
-    <Report key="Report_20" name="Moieties" taskType="moieties" separator="&#x09;" precision="6">
+    <Report key="Report_1" name="Moieties" taskType="moieties" separator="&#x09;" precision="6">
       <Comment>
         Automatically generated report.
       </Comment>
@@ -1408,7 +1547,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
         <Object cn="CN=Root,Vector=TaskList[Moieties],Object=Result"/>
       </Footer>
     </Report>
-    <Report key="Report_21" name="Linear Noise Approximation" taskType="linearNoiseApproximation" separator="&#x09;" precision="6">
+    <Report key="Report_0" name="Linear Noise Approximation" taskType="linearNoiseApproximation" separator="&#x09;" precision="6">
       <Comment>
         Automatically generated report.
       </Comment>
@@ -1548,7 +1687,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
         </PlotItem>
       </ListOfPlotItems>
     </PlotSpecification>
-    <PlotSpecification name="CO_exposureppm_SO2" type="Plot2D" active="0" taskTypes="">
+    <PlotSpecification name="CO_exposureppm_SO2" type="Plot2D" active="1" taskTypes="">
       <Parameter name="log X" type="bool" value="0"/>
       <Parameter name="log Y" type="bool" value="0"/>
       <Parameter name="x axis" type="string" value=""/>
@@ -1556,18 +1695,6 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
       <Parameter name="z axis" type="string" value=""/>
       <Parameter name="plot engine" type="string" value="QWT"/>
       <ListOfPlotItems>
-        <PlotItem name="Values[Saturation_O2_copart]|Values[PO2].InitialValue" type="Curve2D">
-          <Parameter name="Line type" type="unsignedInteger" value="1"/>
-          <Parameter name="Line subtype" type="unsignedInteger" value="1"/>
-          <Parameter name="Line width" type="unsignedFloat" value="1.2"/>
-          <Parameter name="Symbol subtype" type="unsignedInteger" value="1"/>
-          <Parameter name="Color" type="string" value="#0000FF"/>
-          <Parameter name="Recording Activity" type="string" value="during"/>
-          <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[PO2],Reference=InitialValue"/>
-            <ChannelSpec cn="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[Saturation_O2_copart],Reference=Value"/>
-          </ListOfChannels>
-        </PlotItem>
         <PlotItem name="Values[Saturation_O2_normal]|Values[PO2].InitialValue" type="Curve2D">
           <Parameter name="Line type" type="unsignedInteger" value="1"/>
           <Parameter name="Line subtype" type="unsignedInteger" value="0"/>
@@ -1578,6 +1705,18 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
           <ListOfChannels>
             <ChannelSpec cn="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[PO2],Reference=InitialValue"/>
             <ChannelSpec cn="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[Saturation_O2_normal],Reference=Value"/>
+          </ListOfChannels>
+        </PlotItem>
+        <PlotItem name="Values[Saturation_O2_copart]|Values[PO2].InitialValue" type="Curve2D">
+          <Parameter name="Line type" type="unsignedInteger" value="1"/>
+          <Parameter name="Line subtype" type="unsignedInteger" value="0"/>
+          <Parameter name="Line width" type="unsignedFloat" value="1.2"/>
+          <Parameter name="Symbol subtype" type="unsignedInteger" value="0"/>
+          <Parameter name="Color" type="string" value="#0000FF"/>
+          <Parameter name="Recording Activity" type="string" value="during"/>
+          <ListOfChannels>
+            <ChannelSpec cn="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[PO2],Reference=InitialValue"/>
+            <ChannelSpec cn="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[Saturation_O2_copart],Reference=Value"/>
           </ListOfChannels>
         </PlotItem>
       </ListOfPlotItems>
@@ -1616,101 +1755,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
         </PlotItem>
       </ListOfPlotItems>
     </PlotSpecification>
-    <PlotSpecification name="CO_1mmHg_condition_PO2_Distribution_Hb_Species_" type="Plot2D" active="0" taskTypes="">
-      <Parameter name="log X" type="bool" value="0"/>
-      <Parameter name="log Y" type="bool" value="0"/>
-      <Parameter name="x axis" type="string" value=""/>
-      <Parameter name="y axis" type="string" value=""/>
-      <Parameter name="z axis" type="string" value=""/>
-      <Parameter name="plot engine" type="string" value="QWT"/>
-      <ListOfPlotItems>
-        <PlotItem name="[Hb{CO_lung}]|Values[PO2].InitialValue" type="Curve2D">
-          <Parameter name="Line type" type="unsignedInteger" value="0"/>
-          <Parameter name="Line subtype" type="unsignedInteger" value="0"/>
-          <Parameter name="Line width" type="unsignedFloat" value="1.2"/>
-          <Parameter name="Symbol subtype" type="unsignedInteger" value="0"/>
-          <Parameter name="Color" type="string" value="auto"/>
-          <Parameter name="Recording Activity" type="string" value="during"/>
-          <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[PO2],Reference=InitialValue"/>
-            <ChannelSpec cn="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung],Vector=Metabolites[Hb],Reference=Concentration"/>
-          </ListOfChannels>
-        </PlotItem>
-        <PlotItem name="[HbO2{CO_lung}]|Values[PO2].InitialValue" type="Curve2D">
-          <Parameter name="Line type" type="unsignedInteger" value="0"/>
-          <Parameter name="Line subtype" type="unsignedInteger" value="0"/>
-          <Parameter name="Line width" type="unsignedFloat" value="1.2"/>
-          <Parameter name="Symbol subtype" type="unsignedInteger" value="0"/>
-          <Parameter name="Color" type="string" value="auto"/>
-          <Parameter name="Recording Activity" type="string" value="during"/>
-          <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[PO2],Reference=InitialValue"/>
-            <ChannelSpec cn="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung],Vector=Metabolites[HbO2],Reference=Concentration"/>
-          </ListOfChannels>
-        </PlotItem>
-        <PlotItem name="[HbO22{CO_lung}]|Values[PO2].InitialValue" type="Curve2D">
-          <Parameter name="Line type" type="unsignedInteger" value="0"/>
-          <Parameter name="Line subtype" type="unsignedInteger" value="0"/>
-          <Parameter name="Line width" type="unsignedFloat" value="1.2"/>
-          <Parameter name="Symbol subtype" type="unsignedInteger" value="0"/>
-          <Parameter name="Color" type="string" value="auto"/>
-          <Parameter name="Recording Activity" type="string" value="during"/>
-          <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[PO2],Reference=InitialValue"/>
-            <ChannelSpec cn="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung],Vector=Metabolites[HbO22],Reference=Concentration"/>
-          </ListOfChannels>
-        </PlotItem>
-        <PlotItem name="[HbO23{CO_lung}]|Values[PO2].InitialValue" type="Curve2D">
-          <Parameter name="Line type" type="unsignedInteger" value="0"/>
-          <Parameter name="Line subtype" type="unsignedInteger" value="0"/>
-          <Parameter name="Line width" type="unsignedFloat" value="1.2"/>
-          <Parameter name="Symbol subtype" type="unsignedInteger" value="0"/>
-          <Parameter name="Color" type="string" value="auto"/>
-          <Parameter name="Recording Activity" type="string" value="during"/>
-          <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[PO2],Reference=InitialValue"/>
-            <ChannelSpec cn="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung],Vector=Metabolites[HbO23],Reference=Concentration"/>
-          </ListOfChannels>
-        </PlotItem>
-        <PlotItem name="[HbO24{CO_lung}]|Values[PO2].InitialValue" type="Curve2D">
-          <Parameter name="Line type" type="unsignedInteger" value="0"/>
-          <Parameter name="Line subtype" type="unsignedInteger" value="0"/>
-          <Parameter name="Line width" type="unsignedFloat" value="1.2"/>
-          <Parameter name="Symbol subtype" type="unsignedInteger" value="0"/>
-          <Parameter name="Color" type="string" value="auto"/>
-          <Parameter name="Recording Activity" type="string" value="during"/>
-          <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[PO2],Reference=InitialValue"/>
-            <ChannelSpec cn="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung],Vector=Metabolites[HbO24],Reference=Concentration"/>
-          </ListOfChannels>
-        </PlotItem>
-        <PlotItem name="[HbCO]|Values[PO2].InitialValue" type="Curve2D">
-          <Parameter name="Line type" type="unsignedInteger" value="0"/>
-          <Parameter name="Line subtype" type="unsignedInteger" value="0"/>
-          <Parameter name="Line width" type="unsignedFloat" value="1.2"/>
-          <Parameter name="Symbol subtype" type="unsignedInteger" value="0"/>
-          <Parameter name="Color" type="string" value="auto"/>
-          <Parameter name="Recording Activity" type="string" value="during"/>
-          <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[PO2],Reference=InitialValue"/>
-            <ChannelSpec cn="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung],Vector=Metabolites[HbCO],Reference=Concentration"/>
-          </ListOfChannels>
-        </PlotItem>
-        <PlotItem name="[HbCOO2]|Values[PO2].InitialValue" type="Curve2D">
-          <Parameter name="Line type" type="unsignedInteger" value="0"/>
-          <Parameter name="Line subtype" type="unsignedInteger" value="0"/>
-          <Parameter name="Line width" type="unsignedFloat" value="1.2"/>
-          <Parameter name="Symbol subtype" type="unsignedInteger" value="0"/>
-          <Parameter name="Color" type="string" value="auto"/>
-          <Parameter name="Recording Activity" type="string" value="during"/>
-          <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[PO2],Reference=InitialValue"/>
-            <ChannelSpec cn="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung],Vector=Metabolites[HbCOO2],Reference=Concentration"/>
-          </ListOfChannels>
-        </PlotItem>
-      </ListOfPlotItems>
-    </PlotSpecification>
-    <PlotSpecification name="Concentrations, Volumes, and Global Quantity Values" type="Plot2D" active="0" taskTypes="">
+    <PlotSpecification name="Concentrations, Volumes, and Global Quantity Values 1" type="Plot2D" active="0" taskTypes="">
       <Parameter name="log X" type="bool" value="0"/>
       <Parameter name="log Y" type="bool" value="0"/>
       <Parameter name="plot engine" type="string" value="QCustomPlot"/>
@@ -1722,7 +1767,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
           <Parameter name="Line type" type="unsignedInteger" value="0"/>
           <Parameter name="Line subtype" type="unsignedInteger" value="0"/>
           <Parameter name="Line width" type="unsignedFloat" value="1.2"/>
-          <Parameter name="Symbol subtype" type="unsignedInteger" value="1"/>
+          <Parameter name="Symbol subtype" type="unsignedInteger" value="0"/>
           <Parameter name="Color" type="string" value="#0000FF"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
@@ -1734,7 +1779,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
           <Parameter name="Line type" type="unsignedInteger" value="0"/>
           <Parameter name="Line subtype" type="unsignedInteger" value="0"/>
           <Parameter name="Line width" type="unsignedFloat" value="1.2"/>
-          <Parameter name="Symbol subtype" type="unsignedInteger" value="1"/>
+          <Parameter name="Symbol subtype" type="unsignedInteger" value="0"/>
           <Parameter name="Color" type="string" value="#00E600"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
@@ -1746,7 +1791,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
           <Parameter name="Line type" type="unsignedInteger" value="0"/>
           <Parameter name="Line subtype" type="unsignedInteger" value="0"/>
           <Parameter name="Line width" type="unsignedFloat" value="1.2"/>
-          <Parameter name="Symbol subtype" type="unsignedInteger" value="1"/>
+          <Parameter name="Symbol subtype" type="unsignedInteger" value="0"/>
           <Parameter name="Color" type="string" value="#00BEF0"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
@@ -1758,7 +1803,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
           <Parameter name="Line type" type="unsignedInteger" value="0"/>
           <Parameter name="Line subtype" type="unsignedInteger" value="0"/>
           <Parameter name="Line width" type="unsignedFloat" value="1.2"/>
-          <Parameter name="Symbol subtype" type="unsignedInteger" value="1"/>
+          <Parameter name="Symbol subtype" type="unsignedInteger" value="0"/>
           <Parameter name="Color" type="string" value="#F000FF"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
@@ -1770,7 +1815,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
           <Parameter name="Line type" type="unsignedInteger" value="0"/>
           <Parameter name="Line subtype" type="unsignedInteger" value="0"/>
           <Parameter name="Line width" type="unsignedFloat" value="1.2"/>
-          <Parameter name="Symbol subtype" type="unsignedInteger" value="1"/>
+          <Parameter name="Symbol subtype" type="unsignedInteger" value="0"/>
           <Parameter name="Color" type="string" value="#F0C800"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
@@ -1782,7 +1827,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
           <Parameter name="Line type" type="unsignedInteger" value="0"/>
           <Parameter name="Line subtype" type="unsignedInteger" value="0"/>
           <Parameter name="Line width" type="unsignedFloat" value="1.2"/>
-          <Parameter name="Symbol subtype" type="unsignedInteger" value="1"/>
+          <Parameter name="Symbol subtype" type="unsignedInteger" value="0"/>
           <Parameter name="Color" type="string" value="#FF0000"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
@@ -1794,7 +1839,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
           <Parameter name="Line type" type="unsignedInteger" value="0"/>
           <Parameter name="Line subtype" type="unsignedInteger" value="0"/>
           <Parameter name="Line width" type="unsignedFloat" value="1.2"/>
-          <Parameter name="Symbol subtype" type="unsignedInteger" value="1"/>
+          <Parameter name="Symbol subtype" type="unsignedInteger" value="0"/>
           <Parameter name="Color" type="string" value="#7051A7"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
@@ -1802,26 +1847,28 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
             <ChannelSpec cn="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung],Vector=Metabolites[HbCOO2],Reference=Concentration"/>
           </ListOfChannels>
         </PlotItem>
-      </ListOfPlotItems>
-    </PlotSpecification>
-    <PlotSpecification name="相对O2饱和度" type="Plot2D" active="1" taskTypes="">
-      <Parameter name="log X" type="bool" value="0"/>
-      <Parameter name="log Y" type="bool" value="0"/>
-      <Parameter name="x axis" type="string" value=""/>
-      <Parameter name="y axis" type="string" value=""/>
-      <Parameter name="z axis" type="string" value=""/>
-      <Parameter name="plot engine" type="string" value="QWT"/>
-      <ListOfPlotItems>
-        <PlotItem name="Values[Relative_Saturation_calculate]|Time" type="Curve2D">
+        <PlotItem name="[HbCOO22]" type="Curve2D">
           <Parameter name="Line type" type="unsignedInteger" value="0"/>
           <Parameter name="Line subtype" type="unsignedInteger" value="0"/>
           <Parameter name="Line width" type="unsignedFloat" value="1.2"/>
-          <Parameter name="Symbol subtype" type="unsignedInteger" value="1"/>
-          <Parameter name="Color" type="string" value="auto"/>
+          <Parameter name="Symbol subtype" type="unsignedInteger" value="0"/>
+          <Parameter name="Color" type="string" value="#FD8D3C"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
             <ChannelSpec cn="CN=Root,Model=Oxygen Binding to Hemoglobin,Reference=Time"/>
-            <ChannelSpec cn="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Values[Relative_Saturation_calculate],Reference=Value"/>
+            <ChannelSpec cn="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung],Vector=Metabolites[HbCOO22],Reference=Concentration"/>
+          </ListOfChannels>
+        </PlotItem>
+        <PlotItem name="[HbCOO23]" type="Curve2D">
+          <Parameter name="Line type" type="unsignedInteger" value="0"/>
+          <Parameter name="Line subtype" type="unsignedInteger" value="0"/>
+          <Parameter name="Line width" type="unsignedFloat" value="1.2"/>
+          <Parameter name="Symbol subtype" type="unsignedInteger" value="0"/>
+          <Parameter name="Color" type="string" value="#1B9E77"/>
+          <Parameter name="Recording Activity" type="string" value="during"/>
+          <ListOfChannels>
+            <ChannelSpec cn="CN=Root,Model=Oxygen Binding to Hemoglobin,Reference=Time"/>
+            <ChannelSpec cn="CN=Root,Model=Oxygen Binding to Hemoglobin,Vector=Compartments[CO_lung],Vector=Metabolites[HbCOO23],Reference=Concentration"/>
           </ListOfChannels>
         </PlotItem>
       </ListOfPlotItems>
@@ -1947,12 +1994,12 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
         m^-1*kg*s^-2
       </Expression>
     </UnitDefinition>
-    <UnitDefinition key="Unit_93" name="mmHg" symbol="mmHg">
+    <UnitDefinition key="Unit_91" name="mmHg" symbol="mmHg">
       <MiriamAnnotation>
 <rdf:RDF
 xmlns:dcterms="http://purl.org/dc/terms/"
 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<rdf:Description rdf:about="#Unit_92">
+<rdf:Description rdf:about="#Unit_90">
 </rdf:Description>
 </rdf:RDF>
       </MiriamAnnotation>
@@ -1960,12 +2007,12 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
         133.322 * Pa
       </Expression>
     </UnitDefinition>
-    <UnitDefinition key="Unit_95" name="ppm" symbol="ppm">
+    <UnitDefinition key="Unit_105" name="ppm" symbol="ppm">
       <MiriamAnnotation>
 <rdf:RDF
 xmlns:dcterms="http://purl.org/dc/terms/"
 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<rdf:Description rdf:about="#Unit_94">
+<rdf:Description rdf:about="#Unit_104">
 </rdf:Description>
 </rdf:RDF>
       </MiriamAnnotation>
