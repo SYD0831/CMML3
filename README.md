@@ -6,6 +6,8 @@ This repository houses the source code and comprehensive documentation for the C
 This `ICA2-Batch_correction-Scanorama` folder contains the source code, analysis notebooks, and supporting materials for **ICA 2**, part of the CMML3 course. The project focuses on benchmarking embedding-based integration methods for single-cell RNA-seq data, with a focus on both batch correction and biological signal preservation.
 
 ##  Folder Structure
+
+```
 ICA2-Batch_correction-Scanorama/
 ├── Notebook/
 │ ├── 1-Data_preprocessing.ipynb
@@ -17,7 +19,7 @@ ICA2-Batch_correction-Scanorama/
 │ ├── S2-Scanorama-pbmc.ipynb
 │ └── Seurat_Function.R
 ├── Documentation of supporting materials.pdf
-
+```
 
 ## Methods Overview
 
